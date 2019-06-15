@@ -26,10 +26,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": ["node_modules/jquery/dist/jquery.min.js","src/app/sass/js/bootstrap.min.js",
+              "src/app/sass/js/jquery-2.2.0.min.js","src/app/sass/js/jquery-plugin-collection.js",
+              "src/app/sass/js/jquery-ui.min.js","src/app/sass/js/custom.js"],
             "es5BrowserSupport": true
           },
           "configurations": {
