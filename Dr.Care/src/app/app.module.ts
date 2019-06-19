@@ -35,6 +35,7 @@ import { DoctorListingComponent } from './features/doctor-listing/doctor-listing
 import { DoctorInfoDisplayComponent } from './features/doctor/doctor-info-display/doctor-info-display.component';
 import { DoctorAvailabilityComponent } from './features/doctor/doctor-availability/doctor-availability.component';
 import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
+import { ReservationFormComponent } from './features/reservation-form/reservation-form.component';
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
 
@@ -47,8 +48,8 @@ import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-
     FooterComponent,
     DoctorListingComponent,
 
-    
-
+    ReservationFormComponent,
+   
     RegisterFormComponent,
     TestHomeComponent,
     LoginFormComponent,
@@ -58,7 +59,8 @@ import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-
     AdvartismentsComponent,
     DoctorInfoDisplayComponent,
     DoctorAvailabilityComponent,
-    DoctorProfileComponent
+    DoctorProfileComponent,
+    ReservationFormComponent
   ],
   imports: [
     BrowserModule,

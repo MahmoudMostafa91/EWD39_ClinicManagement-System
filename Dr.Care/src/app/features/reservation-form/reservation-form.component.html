@@ -1,0 +1,78 @@
+<div class="main-content">
+  <!-- Section: inner-header -->
+  <section class="inner-header divider layer-overlay overlay-deep" data-bg-img="images/bg/bg5.jpg">
+    <div class="container pt-90 pb-50">
+      <!-- Section Content -->
+     
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-push-3">
+          <div class="border-1px p-25">
+            <h4 class="text-theme-colored text-uppercase m-0">Make a Reservation</h4>
+            <div class="line-bottom mb-30"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+            <form id="appointment_form" name="appointment_form" class="form-transparent mt-30" method="post" action="http://html.kodesolution.live/html/health-beauty/medical/medinova-html/v3.2/demo/includes/appointment.php">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group mb-10">
+                    <input id="form_name" name="form_name" class="form-control" type="text" required="" placeholder="Enter Name" aria-required="true">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group mb-10">
+                    <input id="form_email" name="form_email" class="form-control required email" type="email" placeholder="Enter Email" aria-required="true">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group mb-10">
+                    <input id="form_phone" name="form_phone" class="form-control required" type="text" placeholder="Enter Phone" aria-required="true">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group mb-10">
+                    <input name="form_appontment_date" class="form-control required datetime-picker" type="text" placeholder="Appoinment Date & Time" aria-required="true">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-10">
+                <textarea id="form_message" name="form_message" class="form-control required"  placeholder="Enter Message" rows="5" aria-required="true"></textarea>
+              </div>
+              <div class="form-group mb-0 mt-20">
+                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+                <button type="submit" class="btn btn-dark btn-theme-colored" data-loading-text="Please wait...">Submit</button>
+              </div>
+            </form>
+            <!-- Appointment Form Validation-->
+            <script type="text/javascript">
+              $("#appointment_form").validate({
+                submitHandler: function(form) {
+                  var form_btn = $(form).find('button[type="submit"]');
+                  var form_result_div = '#form-result';
+                  $(form_result_div).remove();
+                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                  var form_btn_old_msg = form_btn.html();
+                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                  $(form).ajaxSubmit({
+                    dataType:  'json',
+                    success: function(data) {
+                      if( data.status == 'true' ) {
+                        $(form).find('.form-control').val('');
+                      }
+                      form_btn.prop('disabled', false).html(form_btn_old_msg);
+                      $(form_result_div).html(data.message).fadeIn('slow');
+                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                    }
+                  });
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
