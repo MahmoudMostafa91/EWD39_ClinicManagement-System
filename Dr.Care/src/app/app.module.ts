@@ -31,6 +31,10 @@ import { OurServiceComponent } from './features/our-service/our-service.componen
 import { OffersComponent } from './features/offers/offers.component';
 import { AdvartismentsComponent } from './features/advartisments/advartisments.component';
 import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
+//import { DoctorComponent } from './features/doctor/doctor.component';
+import { DoctorInfoDisplayComponent } from './features/doctor/doctor-info-display/doctor-info-display.component';
+import { DoctorAvailabilityComponent } from './features/doctor/doctor-availability/doctor-availability.component';
+import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
 
@@ -42,6 +46,7 @@ import { DoctorListingComponent } from './features/doctor-listing/doctor-listing
     LowerHeaderComponent,
     FooterComponent,
     DoctorListingComponent,
+
     
 
     RegisterFormComponent,
@@ -50,7 +55,10 @@ import { DoctorListingComponent } from './features/doctor-listing/doctor-listing
 
     OurServiceComponent,
     OffersComponent,
-    AdvartismentsComponent
+    AdvartismentsComponent,
+    DoctorInfoDisplayComponent,
+    DoctorAvailabilityComponent,
+    DoctorProfileComponent
   ],
   imports: [
     BrowserModule,
