@@ -30,6 +30,8 @@ import { fakeBackendProvider } from '../app/_helpers/backend';
 import { OurServiceComponent } from './features/our-service/our-service.component';
 import { OffersComponent } from './features/offers/offers.component';
 import { AdvartismentsComponent } from './features/advartisments/advartisments.component';
+import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
+// import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { AdvartismentsComponent } from './features/advartisments/advartisments.c
     UpperHeaderComponent,
     LowerHeaderComponent,
     FooterComponent,
+    DoctorListingComponent,
+    
 
     RegisterFormComponent,
     TestHomeComponent,
