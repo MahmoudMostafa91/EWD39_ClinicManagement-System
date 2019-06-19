@@ -35,6 +35,7 @@ import { DoctorListingComponent } from './features/doctor-listing/doctor-listing
 import { DoctorInfoDisplayComponent } from './features/doctor/doctor-info-display/doctor-info-display.component';
 import { DoctorAvailabilityComponent } from './features/doctor/doctor-availability/doctor-availability.component';
 import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
+import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
 
@@ -58,7 +59,8 @@ import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-
     AdvartismentsComponent,
     DoctorInfoDisplayComponent,
     DoctorAvailabilityComponent,
-    DoctorProfileComponent
+    DoctorProfileComponent,
+    ClinicInfoComponent
   ],
   imports: [
     BrowserModule,
