@@ -26,7 +26,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "styles": [
               "src/styles.scss"
             ],
             "scripts": [
@@ -35,6 +35,7 @@
               "node_modules/jquery/dist/jquery.min.js",
               "src/assets/sass/js/jquery-ui.min.js",
               "src/assets/sass/js/jquery-plugin-collection.js"
+
               ],
             "es5BrowserSupport": true
           },

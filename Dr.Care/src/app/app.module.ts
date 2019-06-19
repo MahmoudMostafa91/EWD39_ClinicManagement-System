@@ -12,6 +12,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { UpperHeaderComponent } from './core/header/upper-header/upper-header.component';
 import { LowerHeaderComponent } from './core/header/lower-header/lower-header.component';
 import { FooterComponent } from './core/footer/footer.component';
+
 import { RegisterFormComponent } from './features/register-form/register-form.component';
 import { TestHomeComponent } from './features/test-home/test-home.component';
 import { LoginFormComponent } from './features/login-form/login-form.component';
@@ -26,6 +27,9 @@ import { fakeBackendProvider } from '../app/_helpers/backend';
 
 
 
+import { OurServiceComponent } from './features/our-service/our-service.component';
+import { OffersComponent } from './features/offers/offers.component';
+import { AdvartismentsComponent } from './features/advartisments/advartisments.component';
 
 
 @NgModule({
@@ -35,9 +39,14 @@ import { fakeBackendProvider } from '../app/_helpers/backend';
     UpperHeaderComponent,
     LowerHeaderComponent,
     FooterComponent,
+
     RegisterFormComponent,
     TestHomeComponent,
     LoginFormComponent,
+
+    OurServiceComponent,
+    OffersComponent,
+    AdvartismentsComponent
   ],
   imports: [
     BrowserModule,
