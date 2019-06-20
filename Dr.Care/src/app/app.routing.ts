@@ -6,12 +6,15 @@ import { LoginFormComponent } from './features/login-form/login-form.component';
 import { AuthGuard } from './_helpers/auth.guard';
 
 import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
+import { ProfileComponent } from './features/profile/profile.component';
 
 const routes: Routes = [
     { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
     { path: 'register', component: RegisterFormComponent },
     { path: 'login', component: LoginFormComponent },
     { path: 'addclinic', component: AddclinicFormComponent },
+    { path: 'profile', component: ProfileComponent },
+
 
 
     // otherwise redirect to home
