@@ -13,5 +13,3 @@ export class AdvartismentsComponent implements OnInit {
   }
 
 }
-
-
