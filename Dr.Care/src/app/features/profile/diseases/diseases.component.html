@@ -1,3 +1,208 @@
-<p>
-  diseases works!
-</p>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item active">
+    <a class="nav-link in" data-toggle="tab" href="#Chronic" role="tab" aria-controls="Chronic"
+      aria-selected="false">Chronic</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#Current" role="tab" aria-controls="Current"
+      aria-selected="true">Current</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#Previous" role="tab" aria-controls="Previous"
+      aria-selected="true">Previous</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade in active" id="Chronic" role="tabpanel" aria-labelledby="Chronic">
+    <div class="row p">
+      <table class="table-hover table-condensed wide-table">
+        <thead>
+          <tr>
+            <th>Disease Name</th>
+            <th>Infection Date</th>
+            <th>Medication</th>
+            <th>Hospitalization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>Cancer</span></td>
+            <td><span>Uncle</span></td>
+            <td><a href="">Negative</a></td>
+            <td class="medication-notes">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt animi quos
+                iusto,
+                fugiat quibusdam ut maiores in natus facilis nisi? A voluptatem porro doloribus
+                voluptatibus. Maiores aspernatur incidunt id. </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="" class="btn btn-primary btn-lg btn-absolute" data-toggle="modal" data-target="#Chronic-Modal">Add
+        Disease</a>
+    </div>
+    <div class="modal fade" id="Chronic-Modal" tabindex="-1" role="dialog" aria-labelledby="medication-ModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="medication-ModalLabel">Medication</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Disease Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Infection Date</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Recovery Date</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Hospitalization</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-flat">Add Disease</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="Current" role="tabpanel" aria-labelledby="Current">
+    <div class="row p">
+      <table class="table-hover table-condensed wide-table">
+        <thead>
+          <tr>
+            <th>Disease Name</th>
+            <th>Infection Date</th>
+            <th>Medication</th>
+            <th>Hospitalization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>Cancer</span></td>
+            <td><span>Uncle</span></td>
+            <td><span>Negative</span></td>
+            <td class="medication-notes">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt animi quos
+                iusto,
+                fugiat quibusdam ut maiores in natus facilis nisi? A voluptatem porro doloribus
+                voluptatibus. Maiores aspernatur incidunt id. </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="" class="btn btn-primary btn-lg btn-absolute" data-toggle="modal" data-target="#Current-Modal">Add
+        Disease</a>
+    </div>
+    <div class="modal fade" id="Current-Modal" tabindex="-1" role="dialog" aria-labelledby="medication-ModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="medication-ModalLabel">Medication</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Disease Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Infection Date</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Medication</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Hospitalization</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-flat">Add Disease</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="Previous" role="tabpanel" aria-labelledby="Current">
+    <div class="row p">
+      <table class="table-hover table-condensed wide-table">
+        <thead>
+          <tr>
+            <th>Disease Name</th>
+            <th>Infection Date</th>
+            <th>Recovery Date</th>
+            <th>Hospitalization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>Cancer</span></td>
+            <td><span>Uncle</span></td>
+            <td><span>Negative</span></td>
+            <td class="medication-notes">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt animi quos
+                iusto,
+                fugiat quibusdam ut maiores in natus facilis nisi? A voluptatem porro doloribus
+                voluptatibus. Maiores aspernatur incidunt id. </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="" class="btn btn-primary btn-lg btn-absolute" data-toggle="modal" data-target="#Past-Modal">Add
+        Disease</a>
+    </div>
+    <div class="modal fade" id="Past-Modal" tabindex="-1" role="dialog" aria-labelledby="medication-ModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="medication-ModalLabel">Medication</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Disease Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Infection Date</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Recovery Date</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Hospitalization</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-flat">Add Disease</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
