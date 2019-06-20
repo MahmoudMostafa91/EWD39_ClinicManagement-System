@@ -36,6 +36,7 @@ import { DoctorInfoDisplayComponent } from './features/doctor/doctor-info-displa
 import { DoctorAvailabilityComponent } from './features/doctor/doctor-availability/doctor-availability.component';
 import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
 import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
+import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
 
@@ -60,7 +61,8 @@ import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.c
     DoctorInfoDisplayComponent,
     DoctorAvailabilityComponent,
     DoctorProfileComponent,
-    ClinicInfoComponent
+    ClinicInfoComponent,
+    AddclinicFormComponent
   ],
   imports: [
     BrowserModule,
