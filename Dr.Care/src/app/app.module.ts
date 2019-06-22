@@ -31,14 +31,27 @@ import { OurServiceComponent } from './features/our-service/our-service.componen
 import { OffersComponent } from './features/offers/offers.component';
 import { AdvartismentsComponent } from './features/advartisments/advartisments.component';
 import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
+
+// import { DoctorComponent } from './features/doctor/doctor.component';
+import { DoctorInfoDisplayComponent } from './features/doctor/doctor-info-display/doctor-info-display.component';
+import { DoctorAvailabilityComponent } from './features/doctor/doctor-availability/doctor-availability.component';
+import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
+import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
+import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
+
 import { ProfileComponent } from './features/profile/profile.component';
 import { PersonalInfoComponent } from './features/Profile/personal-info/personal-info.component';
 import { VitalsComponent } from './features/Profile/vitals/vitals.component';
 import { FamilyHistoryComponent } from './features/Profile/family-history/family-history.component';
 import { DiseasesComponent } from './features/Profile/diseases/diseases.component';
-import { LabInvestigationsComponent } from './features/Profile/lab-investigations/lab-investigations.component';
-import { VisitsComponent } from './features/Profile/visits/visits.component';
-import { MedicationsComponent } from './features/Profile/medications/medications.component';
+import {MedicationsComponent} from './features/profile/medications/medications.component';
+import { MedicationService } from './_services/_profile-services/medication.service';
+import { VisitComponent } from './features/profile/visit/visit.component';
+import { VisitService } from './_services/_profile-services/visit.service';
+import { LabInvestigationService } from './_services/_profile-services/lab-investigation.service';
+import { LabInvestigationComponent } from './features/profile/lab-investigation/lab-investigation.component';
+
+
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
 
@@ -50,7 +63,6 @@ import { MedicationsComponent } from './features/Profile/medications/medications
     LowerHeaderComponent,
     FooterComponent,
     DoctorListingComponent,
-    
 
     RegisterFormComponent,
     TestHomeComponent,
@@ -59,14 +71,19 @@ import { MedicationsComponent } from './features/Profile/medications/medications
     OurServiceComponent,
     OffersComponent,
     AdvartismentsComponent,
+    DoctorInfoDisplayComponent,
+    DoctorAvailabilityComponent,
+    DoctorProfileComponent,
+    ClinicInfoComponent,
+    AddclinicFormComponent,
     ProfileComponent,
     PersonalInfoComponent,
     VitalsComponent,
     FamilyHistoryComponent,
     DiseasesComponent,
-    LabInvestigationsComponent,
-    VisitsComponent,
-    MedicationsComponent
+    MedicationsComponent,
+    VisitComponent,
+    LabInvestigationComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +96,10 @@ import { MedicationsComponent } from './features/Profile/medications/medications
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-    fakeBackendProvider],
+    fakeBackendProvider,
+    MedicationService,
+    VisitService,
+    LabInvestigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
