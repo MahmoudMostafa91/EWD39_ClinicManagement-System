@@ -19,21 +19,24 @@
 <div class="section-content" class="container pt-90 pb-50">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-md-8 pull-right pl-60 pl-sm-15">
+          <div *ngIf="clinics">
         <div>
-          <h3>{{clinicdata[0].name}}</h3>
+          <h3>{{clinics[0].name}}</h3>
           <h5 class="text-theme-colored">MBBS (Sydney), FRACS (Paediatric Surgery)</h5>
-          <p>{{clinicdata[0].description}}</p>
+          <p>{{clinics[0].desc}}</p>
         </div>
+          </div>
+        <div *ngIf="clinics">
         <div class="mt-30">
           <dl class="dl-horizontal doctor-info">
             <dt>Address</dt>
             <dd>
-                {{clinicdata[0].address}} 
+                {{clinics[0].address}} 
             </dd>
             <hr>
             <dt>Phone</dt>
             <dd>
-                {{clinicdata[0].phone}}
+                {{clinics[0].phone}}
             </dd>
             <dt>Website</dt>
             <dd>
@@ -42,7 +45,7 @@
             <hr>
           </dl>
         </div>
-     
+      </div>
 
           </div>
           <div class="col-sx-12 col-sm-4 col-md-4 sidebar pull-left">
