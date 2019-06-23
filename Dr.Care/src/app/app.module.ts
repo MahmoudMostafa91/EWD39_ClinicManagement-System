@@ -36,6 +36,7 @@ import { DoctorListingComponent } from './features/doctor-listing/doctor-listing
 import { DoctorInfoDisplayComponent } from './features/doctor/doctor-info-display/doctor-info-display.component';
 import { DoctorAvailabilityComponent } from './features/doctor/doctor-availability/doctor-availability.component';
 import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
+import { ReservationFormComponent } from './features/reservation-form/reservation-form.component';
 import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
 
@@ -60,18 +61,17 @@ import { ClinicListingComponent } from './features/clinic-listing/clinic-listing
     LowerHeaderComponent,
     FooterComponent,
     DoctorListingComponent,
-    
-
+    ReservationFormComponent,
     RegisterFormComponent,
     TestHomeComponent,
     LoginFormComponent,
-
     OurServiceComponent,
     OffersComponent,
     AdvartismentsComponent,
     DoctorInfoDisplayComponent,
     DoctorAvailabilityComponent,
     DoctorProfileComponent,
+    ReservationFormComponent,
     ClinicInfoComponent,
     AddclinicFormComponent,
     ProfileComponent,
