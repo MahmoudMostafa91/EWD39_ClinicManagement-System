@@ -10,6 +10,7 @@ import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form
 import { ProfileComponent } from './features/profile/profile.component';
 import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
+import { ReservationCelendarComponent } from './features/reservation-celendar/reservation-celendar.component';
 
 const routes: Routes = [
     { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
@@ -18,6 +19,7 @@ const routes: Routes = [
      {path: 'make_reservation', component: ReservationFormComponent },
     { path: 'addclinic', component: AddclinicFormComponent },
     { path: 'profile', component: ProfileComponent },
+    { path: 'view_reservation', component: ReservationCelendarComponent},
     { path: 'clinicProfile/:id', component: ClinicInfoComponent },
     { path: 'doctorProfile/:id', component: DoctorProfileComponent },
 

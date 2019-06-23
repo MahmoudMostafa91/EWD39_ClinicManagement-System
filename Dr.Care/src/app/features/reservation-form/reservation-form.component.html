@@ -60,7 +60,7 @@
               </div>
               <div class="form-group mb-0 mt-20">
                <!--  <input id="form_botcheck" formControlName="form_botcheck" class="form-control" type="hidden" value=""> -->
-                <button  [disabled]="loading" class="btn btn-dark btn-theme-colored" data-loading-text="Please wait...">
+                <button  [disabled]="loading" routerLink="/view_reservation" class="btn btn-dark btn-theme-colored" data-loading-text="Please wait...">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
                   Submit</button>
               </div>

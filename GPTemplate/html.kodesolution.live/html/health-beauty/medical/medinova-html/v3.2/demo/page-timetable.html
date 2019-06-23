@@ -1395,7 +1395,7 @@
                 
                 //fix hour range
                 $( window ).load(function() {
-                  $("#calendar .fc-axis.fc-time").each(function() {
+                  $("#calendar .fc-axis .fc-time").each(function() {
                     var each_range = $(this).children('span').html();
                     var range_array = each_range.split(' - ');
                     if( range_array[0] == range_array[1] ) {
