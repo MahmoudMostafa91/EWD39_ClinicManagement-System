@@ -225,7 +225,9 @@
     <Compile Include="BLL\ReservatiopnAppointementManager.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClinicController.cs" />
+    <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -237,6 +239,26 @@
     <Compile Include="Migrations\201906212021347_add name coloumn to clinic table.cs" />
     <Compile Include="Migrations\201906212021347_add name coloumn to clinic table.Designer.cs">
       <DependentUpon>201906212021347_add name coloumn to clinic table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906221332441_add Specialization coloumn to clinic table.cs" />
+    <Compile Include="Migrations\201906221332441_add Specialization coloumn to clinic table.Designer.cs">
+      <DependentUpon>201906221332441_add Specialization coloumn to clinic table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906230909475_add pass column to clinic table.cs" />
+    <Compile Include="Migrations\201906230909475_add pass column to clinic table.Designer.cs">
+      <DependentUpon>201906230909475_add pass column to clinic table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906230912350_add validation in clinic table.cs" />
+    <Compile Include="Migrations\201906230912350_add validation in clinic table.Designer.cs">
+      <DependentUpon>201906230912350_add validation in clinic table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906230941539_edit desc column in clinic table.cs" />
+    <Compile Include="Migrations\201906230941539_edit desc column in clinic table.Designer.cs">
+      <DependentUpon>201906230941539_edit desc column in clinic table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906230942429_edit desc column in clinic table 2.cs" />
+    <Compile Include="Migrations\201906230942429_edit desc column in clinic table 2.Designer.cs">
+      <DependentUpon>201906230942429_edit desc column in clinic table 2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -352,6 +374,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906212021347_add name coloumn to clinic table.resx">
       <DependentUpon>201906212021347_add name coloumn to clinic table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906221332441_add Specialization coloumn to clinic table.resx">
+      <DependentUpon>201906221332441_add Specialization coloumn to clinic table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906230909475_add pass column to clinic table.resx">
+      <DependentUpon>201906230909475_add pass column to clinic table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906230912350_add validation in clinic table.resx">
+      <DependentUpon>201906230912350_add validation in clinic table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906230941539_edit desc column in clinic table.resx">
+      <DependentUpon>201906230941539_edit desc column in clinic table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906230942429_edit desc column in clinic table 2.resx">
+      <DependentUpon>201906230942429_edit desc column in clinic table 2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

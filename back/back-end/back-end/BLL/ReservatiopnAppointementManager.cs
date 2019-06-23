@@ -7,7 +7,7 @@ using System.Web;
 
 namespace back_end.BLL
 {
-    public class ReservatiopnAppointementManager : Repository<ReservatiopnAppointementManager, ApplicationDbContext>
+    public class ReservatiopnAppointementManager : Repository<ReservatiopnAppointement, ApplicationDbContext>
     {
         public ReservatiopnAppointementManager(ApplicationDbContext context) : base(context)
         {

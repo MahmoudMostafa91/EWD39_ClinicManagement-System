@@ -121,3 +121,8 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addnamecoloumntoclinictable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addSpecializationcoloumntoclinictable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addpasscolumntoclinictable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvalidationinclinictable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable2.resources

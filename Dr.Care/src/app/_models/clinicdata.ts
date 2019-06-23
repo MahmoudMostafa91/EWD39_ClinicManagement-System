@@ -7,4 +7,6 @@ export interface clinicdata
     address?:string;
     review?:number;
     date?:Date;
+    password?:string;
+    specilization?:string;
 }

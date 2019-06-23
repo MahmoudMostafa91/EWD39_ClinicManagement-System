@@ -47,6 +47,7 @@ import { DiseasesComponent } from './features/Profile/diseases/diseases.componen
 import { LabInvestigationsComponent } from './features/Profile/lab-investigations/lab-investigations.component';
 import { VisitsComponent } from './features/Profile/visits/visits.component';
 import { MedicationsComponent } from './features/Profile/medications/medications.component';
+import { ClinicListingComponent } from './features/clinic-listing/clinic-listing.component';
 
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
@@ -80,7 +81,8 @@ import { MedicationsComponent } from './features/Profile/medications/medications
     DiseasesComponent,
     LabInvestigationsComponent,
     VisitsComponent,
-    MedicationsComponent
+    MedicationsComponent,
+    ClinicListingComponent
   ],
   imports: [
     BrowserModule,
