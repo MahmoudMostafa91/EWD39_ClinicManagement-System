@@ -9,11 +9,12 @@ import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form
 import { ProfileComponent } from './features/profile/profile.component';
 
 const routes: Routes = [
-    { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
     { path: 'register', component: RegisterFormComponent },
     { path: 'login', component: LoginFormComponent },
     { path: 'addclinic', component: AddclinicFormComponent },
-    { path: 'profile', component: ProfileComponent },
+    { path: 'prfile/:id/:vid', component: ProfileComponent},
+    // { path: 'profile', component: ProfileComponent },
+    { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
 
 
 

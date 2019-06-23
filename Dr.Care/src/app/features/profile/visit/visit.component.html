@@ -20,8 +20,8 @@
         <tr *ngFor="let vis of visits">
           <td><span>{{vis.date}}</span></td>
           <td><span>{{vis.time}}</span></td>
-          <td><a href="">{{vis.clininc}}</a></td>
-          <td><a href="">{{vis.doctor}}</a></td>
+          <td><a href="">{{vis.clinic.name}}</a></td>
+          <td><a href="">{{vis.doctor.name}}</a></td>
           <td><span>{{vis.specialization}}</span></td>
           <td><span>-</span></td>
           <td>{{vis.type}}</td>

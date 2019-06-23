@@ -127,3 +127,6 @@ td
     overflow: scroll;
     overflow-x: hidden;
 }
+.section-title{
+    margin-bottom: 30px;
+}

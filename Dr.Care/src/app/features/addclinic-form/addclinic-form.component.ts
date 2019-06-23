@@ -40,15 +40,16 @@ export class AddclinicFormComponent implements OnInit {
         }
 
         this.loading = true;
-        this.clinicService.Add(this.addClinicForm.value)
-            .pipe(first())
-            .subscribe(
-                data => {
-                    this.router.navigate(['/login'], { queryParams: { registered: true }});
-                },
-                error => {
-                    this.error = error;
-                    this.loading = false;
-                });
+        this.clinicService.Add(this.addClinicForm.value);
+        this.router.navigate(['/profile']);
+            // .(first())
+            // .subscribe(
+            //     data => {
+            //         this.router.navigate(['/login'], { queryParams: { registered: true }});
+            //     },
+            //     error => {
+            //         this.error = error;
+            //         this.loading = false;
+            //     });
     }
 }

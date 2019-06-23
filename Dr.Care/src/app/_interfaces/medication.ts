@@ -1,6 +1,7 @@
 
 export interface Medication {
     id?: number;
+    patientId?: number;
     name?: string;
     noOfTimes?: number;
     unitOfTime?: string;

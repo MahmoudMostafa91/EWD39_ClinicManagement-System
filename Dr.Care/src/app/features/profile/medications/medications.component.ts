@@ -31,20 +31,15 @@ medicationForm: FormGroup;
   }
 
   onSave(med?: Medication) {
-    console.log(med);
     if (med === undefined) {
-      med = {};
       med = this.medicationForm.getRawValue() as Medication;
       this.md.add(med);
     } else {
       med = this.medicationForm.getRawValue() as Medication;
       this.md.save(med);
     }
-    console.log(this.medicationForm.controls.name.value);
-    console.log(med);
     this.medications = this.md.getAll();
-    console.log(this.medications);
-    console.log(this.md);
+    this.editedMed = undefined;
     this.medicationForm.reset();
   }
 

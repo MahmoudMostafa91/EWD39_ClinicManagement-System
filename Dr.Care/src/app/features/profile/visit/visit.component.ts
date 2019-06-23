@@ -10,12 +10,10 @@ import { VisitService } from 'src/app/_services/_profile-services/visit.service'
 export class VisitComponent implements OnInit {
  visits: Visit[];
   constructor(public vs: VisitService) {
-    console.log(this.visits);
   }
 
   ngOnInit() {
     this.visits = this.vs.getAll();
-    console.log(this.visits);
   }
 
 }
