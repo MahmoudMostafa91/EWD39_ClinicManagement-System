@@ -15,39 +15,58 @@
             <h4 class="text-theme-colored text-uppercase m-0">Make a Reservation</h4>
             <div class="line-bottom mb-30"></div>
             <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-            <form id="appointment_form" name="appointment_form" class="form-transparent mt-30" method="post" action="http://html.kodesolution.live/html/health-beauty/medical/medinova-html/v3.2/demo/includes/appointment.php">
+            <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="form-group mb-10">
-                    <input id="form_name" name="form_name" class="form-control" type="text" required="" placeholder="Enter Name" aria-required="true">
+                    <input id="form_name" formControlName="form_name" class="form-control" type="text" required="" placeholder="Enter Name" [ngClass]="{ 'is-invalid': submitted && f.form_name.errors }" aria-required="true">
+                    <div *ngIf="submitted && f.form_name.errors" class="invalid-feedback">
+                      <div *ngIf="f.form_name.errors.required"> Name is required</div>
+                  </div>
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group mb-10">
-                    <input id="form_email" name="form_email" class="form-control required email" type="email" placeholder="Enter Email" aria-required="true">
+                    <input id="form_email" formControlName="form_email" class="form-control required email" type="email" placeholder="Enter Email" [ngClass]="{ 'is-invalid': submitted && f.form_email.errors }" aria-required="true">
+                    <div *ngIf="submitted && f.form_email.errors" class="invalid-feedback">
+                      <div *ngIf="f.form_email.errors.required"> Email is required</div>
+                  </div>
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group mb-10">
-                    <input id="form_phone" name="form_phone" class="form-control required" type="text" placeholder="Enter Phone" aria-required="true">
+                    <input id="form_phone" formControlName="form_phone" class="form-control required" type="text" placeholder="Enter Phone" [ngClass]="{ 'is-invalid': submitted && f.form_phone.errors }" aria-required="true">
+                    <div *ngIf="submitted && f.form_phone.errors" class="invalid-feedback">
+                      <div *ngIf="f.form_phone.errors.required"> Phone is required</div>
+                  </div>
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group mb-10">
-                    <input name="form_appontment_date" class="form-control required datetime-picker" type="text" placeholder="Appoinment Date & Time" aria-required="true">
+                      <input class="form-control required datetime-picker" formControlName="form_appontment_date" [ngClass]="{ 'is-invalid': submitted && f.form_appontment_date.errors }" type="datetime-local" id="exampleInput"  ng-model="example.value"
+                      placeholder="yyyy-MM-ddTHH:mm:ss" min="2001-01-01T00:00:00" max="2050-12-31T00:00:00" required />
+
+                    <div *ngIf="submitted && f.form_appontment_date.errors" class="invalid-feedback">
+                      <div *ngIf="f.form_appontment_date.errors.required"> Time ad Date is required</div>
+                  </div>
                   </div>
                 </div>
               </div>
               <div class="form-group mb-10">
-                <textarea id="form_message" name="form_message" class="form-control required"  placeholder="Enter Message" rows="5" aria-required="true"></textarea>
+                <textarea formControlName="form_message" class="form-control"  placeholder="Enter Message" rows="5" [ngClass]="{ 'is-invalid': submitted && f.form_message.errors }" ></textarea>
+                <div *ngIf="submitted && f.form_message.errors" class="invalid-feedback">
+                  <div *ngIf="f.form_message.errors.required"> Message is required</div>
+              </div>
               </div>
               <div class="form-group mb-0 mt-20">
-                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                <button type="submit" class="btn btn-dark btn-theme-colored" data-loading-text="Please wait...">Submit</button>
+               <!--  <input id="form_botcheck" formControlName="form_botcheck" class="form-control" type="hidden" value=""> -->
+                <button  [disabled]="loading" class="btn btn-dark btn-theme-colored" data-loading-text="Please wait...">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                  Submit</button>
               </div>
             </form>
             <!-- Appointment Form Validation-->
-            <script type="text/javascript">
+          <!--   <script type="text/javascript">
               $("#appointment_form").validate({
                 submitHandler: function(form) {
                   var form_btn = $(form).find('button[type="submit"]');
@@ -69,7 +88,7 @@
                   });
                 }
               });
-            </script>
+            </script> -->
           </div>
         </div>
       </div>
