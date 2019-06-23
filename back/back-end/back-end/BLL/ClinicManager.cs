@@ -7,7 +7,7 @@ using System.Web;
 
 namespace back_end.BLL
 {
-    public class ClinicManager:Repository<Clinic,ApplicationDbContext>
+    public class ClinicManager : Repository<Clinic, ApplicationDbContext>
     {
         public ClinicManager(ApplicationDbContext context):base(context)
         {

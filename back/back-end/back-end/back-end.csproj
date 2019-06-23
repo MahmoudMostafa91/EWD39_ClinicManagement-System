@@ -226,17 +226,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClinicController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906211929597_init db.cs" />
-    <Compile Include="Migrations\201906211929597_init db.Designer.cs">
-      <DependentUpon>201906211929597_init db.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906212021347_add name coloumn to clinic table.cs" />
-    <Compile Include="Migrations\201906212021347_add name coloumn to clinic table.Designer.cs">
-      <DependentUpon>201906212021347_add name coloumn to clinic table.cs</DependentUpon>
+    <Compile Include="Migrations\201906230924420_reservationform.cs" />
+    <Compile Include="Migrations\201906230924420_reservationform.Designer.cs">
+      <DependentUpon>201906230924420_reservationform.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -347,11 +344,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906211929597_init db.resx">
-      <DependentUpon>201906211929597_init db.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906212021347_add name coloumn to clinic table.resx">
-      <DependentUpon>201906212021347_add name coloumn to clinic table.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906230924420_reservationform.resx">
+      <DependentUpon>201906230924420_reservationform.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -5,9 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
 namespace back_end.BLL
 {
-    public class AvailableAppointementManager : Repository<AvailableAppointementManager, ApplicationDbContext>
+    public class AvailableAppointementManager : Repository<AvailableAppointement, ApplicationDbContext>
     {
         public AvailableAppointementManager(ApplicationDbContext context) : base(context)
         {
