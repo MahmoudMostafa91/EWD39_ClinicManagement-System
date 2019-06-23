@@ -24,7 +24,8 @@ export class AddclinicFormComponent implements OnInit {
             description: ['', Validators.required],
             phone: ['', Validators.required],
             address: ['', Validators.required],
-            password: ['', [Validators.required, Validators.minLength(6)]]
+            password: ['', [Validators.required, Validators.minLength(6)]],
+            specialization: ['', [Validators.required]],
         });
     }
 
@@ -35,20 +36,19 @@ export class AddclinicFormComponent implements OnInit {
         this.submitted = true;
 
         // stop here if form is invalid
-        if (this.addClinicForm.invalid) {
-            return;
-        }
+       
 
         this.loading = true;
-        this.clinicService.Add(this.addClinicForm.value)
-            .pipe(first())
-            .subscribe(
-                data => {
-                    this.router.navigate(['/login'], { queryParams: { registered: true }});
-                },
-                error => {
-                    this.error = error;
-                    this.loading = false;
-                });
+        this.clinicService.Add(this.addClinicForm.value);
+        // console.log(this.addClinicForm);
+            // .subscribe(
+            //     data => {
+                    this.router.navigate(['/profile']);
+            //     },
+            //     error => {
+            //         this.error = error;
+            //         this.loading = false;
+            //     });
+
     }
 }

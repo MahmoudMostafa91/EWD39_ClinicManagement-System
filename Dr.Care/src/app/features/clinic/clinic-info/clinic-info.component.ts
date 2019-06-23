@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { clinicdata } from 'src/app/_models/clinicdata';
 import { ClinicService } from 'src/app/_services/clinic.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-clinic-info',
@@ -13,20 +14,31 @@ export class ClinicInfoComponent implements OnInit {
 //     this.clinicdata=[
 //       {name:'one clinic',phone:'011223444',address:'12 st maady',description:'the best clinic'}
 //     ]
-    public clinics: clinicdata[];
-    constructor(private newservice: ClinicService) { }
+    public clinic: clinicdata;
+    sub;
+    id;
+    constructor(private _Activatedroute:ActivatedRoute,
+                private newservice: ClinicService) {
+                 }
 
   ngOnInit() {
-    this.getClinics();
-
+  //     this.sub=this._Activatedroute.paramMap.subscribe(params => { 
+  //      console.log(params);
+  //      this.id = params.get('id'); 
+  //      console.log(this.id);
+  //       this.clinic = this.newservice.getById(this.id) ;
+  //     this.getClinic(this.id); 
+  //  });
+  this.id = this._Activatedroute.snapshot.paramMap.get('id');
+  this.getClinic(this.id);
   }
 
 
-  getClinics() {
-      this.newservice.getAll().subscribe(
-         data => { this.clinics = data},
+  getClinic(id) {
+      this.newservice.getById(id).subscribe(
+         data => { this.clinic = data},
          err => console.error(err),
-         () => console.log('done loading clinics')
+         () => console.log(id)
        );
      }
 

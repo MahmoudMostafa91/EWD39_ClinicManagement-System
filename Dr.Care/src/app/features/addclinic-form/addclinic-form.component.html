@@ -40,6 +40,14 @@
     </div>
 
     <div class="form-group">
+            <label for="specialization">Specialization</label>
+            <input type="text" formControlName="specialization" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.specialization.errors }" />
+            <div *ngIf="submitted && f.specialization.errors" class="invalid-feedback">
+                <div *ngIf="f.specialization.errors.required">Specialization is required</div>
+            </div>
+        </div>
+
+    <div class="form-group">
         <label for="password">Password</label>
         <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
         <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
@@ -48,7 +56,7 @@
         </div>
     </div>
     <div class="form-group">
-        <button [disabled]="loading" class="btn btn-primary">
+        <button [disabled]="loading" class="btn btn-primary" >
             <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
             Add
         </button>

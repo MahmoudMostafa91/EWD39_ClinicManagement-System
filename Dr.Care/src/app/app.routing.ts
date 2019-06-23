@@ -8,14 +8,17 @@ import { ReservationFormComponent } from './features/reservation-form/reservatio
 
 import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
 import { ProfileComponent } from './features/profile/profile.component';
+import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 
 const routes: Routes = [
     { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
     { path: 'register', component: RegisterFormComponent },
     { path: 'login', component: LoginFormComponent },
-     {path: 'reservation', component: ReservationFormComponent },
+     {path: 'make_reservation', component: ReservationFormComponent },
     { path: 'addclinic', component: AddclinicFormComponent },
     { path: 'profile', component: ProfileComponent },
+    { path: 'clinicProfile/:id', component: ClinicInfoComponent },
+
 
 
     // otherwise redirect to home
