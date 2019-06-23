@@ -1,0 +1,129 @@
+/* body
+{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+td
+{
+    padding-left: 5px;
+}
+.form-section
+{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.form-control-sm
+{
+    width: 150px;
+    display: inline;
+}
+.medicine-group
+{
+    border: 1px black solid;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.sub-form-section
+{
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+.sub-label
+{
+    font-size: 13px;
+    font-weight: 500;
+}
+.measurements
+{
+    width:100px;
+}
+.tabs
+{
+    display: flex;
+    justify-content: center;
+}
+.tab{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    min-height: 83px !important;
+    max-height: 163 !important;
+}
+.x-ray
+{
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.x-ray__img
+{
+    height: 150px;
+}
+#myTab
+{
+    display: flex;
+    justify-content: center;
+}
+.tab-content
+{
+    min-height: 450px;
+   
+}
+.content
+{
+    max-height: 350px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 10px;
+}
+.p
+{
+    padding: 10px;
+}
+.wide-table
+{
+    width: 100%;
+}
+.edit-delete
+{display: block;}
+.img-modal
+{
+    border: none;
+    padding: 0px;
+}
+.big-img-modal
+{
+    height: 90%;
+}
+.medication-notes
+{
+    width: 35%;
+}
+.tab-content
+{
+    position: relative;
+}
+.btn-absolute
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.personal-info
+{
+    width:40%
+}
+.Profile-img
+{
+    width:60%;
+}
+.modal-body
+{
+    max-height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+}

@@ -6,13 +6,17 @@ import { LoginFormComponent } from './features/login-form/login-form.component';
 import { AuthGuard } from './_helpers/auth.guard';
 import { ReservationFormComponent } from './features/reservation-form/reservation-form.component';
 
-
+import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
+import { ProfileComponent } from './features/profile/profile.component';
 
 const routes: Routes = [
     { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
     { path: 'register', component: RegisterFormComponent },
     { path: 'login', component: LoginFormComponent },
      {path: 'reservation', component: ReservationFormComponent },
+    { path: 'addclinic', component: AddclinicFormComponent },
+    { path: 'profile', component: ProfileComponent },
+
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
