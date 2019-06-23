@@ -35,7 +35,7 @@ export class ClinicService {
   
     
     
-    getAll() {
+    getAll() : Observable<any>{
         return this.http.get(this.baseUrl + '/api/clinic');
     }  
 
