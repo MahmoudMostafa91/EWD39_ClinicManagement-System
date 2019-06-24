@@ -23,4 +23,3 @@ describe('AdvartismentsComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-

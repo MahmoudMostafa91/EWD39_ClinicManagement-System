@@ -11,8 +11,10 @@ import { clinicdata } from 'src/app/_models/clinicdata';
 })
 export class HeaderComponent implements OnInit {
   currentUser: any;
+  clinics:clinicdata[];
   filterdclinics:clinicdata[];
   private _searchterm:string;
+  cli: any;
   get searchterm():string
  {
     return this._searchterm;
@@ -20,6 +22,11 @@ export class HeaderComponent implements OnInit {
  set searchterm(value:string)
  {
    this._searchterm=value;
+   this.filterdclinics= this.filterclinics(value);
+ }
+ filterclinics(searchstring:string)
+ {
+     return this.clinics.filter(clinic=>clinic.name.toLowerCase().indexOf(searchstring.toLowerCase())!==-1);
  }
   constructor
    ( 
@@ -36,6 +43,8 @@ export class HeaderComponent implements OnInit {
     }
 
   ngOnInit() {
+
+    this.filterdclinics=this.clinics;
   }
 
 

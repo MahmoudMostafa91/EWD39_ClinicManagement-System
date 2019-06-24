@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DoctorData } from 'src/app/_models/DoctorData';
+import { DoctorService } from 'src/app/_services/Doctor.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-doctor-listing',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DoctorListingComponent implements OnInit {
 
-  constructor() { }
+  public Doctors: DoctorData[];
+  x;
+  constructor(private newservice: DoctorService) { }
 
   ngOnInit() {
+    this.getDoctors();
   }
+
+  getDoctors(){
+    this.newservice.getAll().subscribe(
+      (data) => { this.Doctors = data;},
+       err => console.error(err),
+       () => console.log('done loading clinics')
+     );
+    }
+
 
 }
