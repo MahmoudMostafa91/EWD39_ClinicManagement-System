@@ -25,7 +25,7 @@ namespace back_end.Models
         public string Address { get; set; }
         [Required]
 
-        public string Specialization { get; set; }
+        public string specilization { get; set; }
         [Required]
         [MaxLength(6)]
         public string Password { get; set; }

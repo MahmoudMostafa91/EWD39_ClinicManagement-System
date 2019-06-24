@@ -19,7 +19,7 @@ export class DoctorListingComponent implements OnInit {
   }
 
   getDoctors(){
-    this.newservice.getAll().subscribe(
+    this.newservice.getSomeDoctors().subscribe(
       (data) => { this.Doctors = data;},
        err => console.error(err),
        () => console.log('done loading clinics')

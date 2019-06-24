@@ -46,6 +46,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=4.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=4.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.4.0.1\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -141,9 +147,6 @@
     </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Host.SystemWeb">
       <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.0\lib\net451\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
@@ -256,6 +259,18 @@
     <Compile Include="Migrations\201906230942429_edit desc column in clinic table 2.Designer.cs">
       <DependentUpon>201906230942429_edit desc column in clinic table 2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906231539003_edit specilization column in clinic table.cs" />
+    <Compile Include="Migrations\201906231539003_edit specilization column in clinic table.Designer.cs">
+      <DependentUpon>201906231539003_edit specilization column in clinic table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241009059_edit patient user table add more columns.cs" />
+    <Compile Include="Migrations\201906241009059_edit patient user table add more columns.Designer.cs">
+      <DependentUpon>201906241009059_edit patient user table add more columns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241012474_edit doctor table add more columns.cs" />
+    <Compile Include="Migrations\201906241012474_edit doctor table add more columns.Designer.cs">
+      <DependentUpon>201906241012474_edit doctor table add more columns.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -263,6 +278,8 @@
     <Compile Include="Models\Clinic.cs" />
     <Compile Include="Models\Days.cs" />
     <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\Enum\BloodType.cs" />
+    <Compile Include="Models\Enum\Gender.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Operation.cs" />
     <Compile Include="Models\ReservatiopnAppointement.cs" />
@@ -306,6 +323,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -382,6 +400,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906230942429_edit desc column in clinic table 2.resx">
       <DependentUpon>201906230942429_edit desc column in clinic table 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906231539003_edit specilization column in clinic table.resx">
+      <DependentUpon>201906231539003_edit specilization column in clinic table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241009059_edit patient user table add more columns.resx">
+      <DependentUpon>201906241009059_edit patient user table add more columns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241012474_edit doctor table add more columns.resx">
+      <DependentUpon>201906241012474_edit doctor table add more columns.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

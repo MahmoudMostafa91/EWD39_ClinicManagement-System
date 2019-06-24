@@ -13,5 +13,11 @@ namespace back_end.BLL
         {
 
         }
+
+        public IEnumerable<Doctor> GetSomeDoctors(int no)
+        {
+            return GetAll().Take(no);
+
+        }
     }
 }

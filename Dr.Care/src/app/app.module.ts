@@ -39,6 +39,7 @@ import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-
 import { ReservationFormComponent } from './features/reservation-form/reservation-form.component';
 import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
+import { AddDoctorFormComponent } from 'src/app/features/add-doctor-form/add-doctor-form.component';
 
 import { ProfileComponent } from './features/profile/profile.component';
 import { PersonalInfoComponent } from './features/Profile/personal-info/personal-info.component';
@@ -49,7 +50,12 @@ import { LabInvestigationsComponent } from './features/Profile/lab-investigation
 import { VisitsComponent } from './features/Profile/visits/visits.component';
 import { MedicationsComponent } from './features/Profile/medications/medications.component';
 import { ClinicListingComponent } from './features/clinic-listing/clinic-listing.component';
+
+import { AllClinicsComponent } from './features/all-clinics/all-clinics.component';
+import { AllDoctorsComponent } from './features/all-doctors/all-doctors.component';
+
 import { ReservationCelendarComponent } from './features/reservation-celendar/reservation-celendar.component';
+
 
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
@@ -84,7 +90,12 @@ import { ReservationCelendarComponent } from './features/reservation-celendar/re
     VisitsComponent,
     MedicationsComponent,
     ClinicListingComponent,
+
+    AllClinicsComponent,
+    AllDoctorsComponent,
+    AddDoctorFormComponent,
     ReservationCelendarComponent
+
   ],
   imports: [
     BrowserModule,

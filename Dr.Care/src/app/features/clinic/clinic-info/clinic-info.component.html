@@ -22,7 +22,7 @@
         <div>
           <h3>{{clinic.name}}</h3>
           <h5 class="text-theme-colored">MBBS (Sydney), FRACS (Paediatric Surgery)</h5>
-          <p>{{clinic.desc}}</p>
+          <p>{{clinic.description}}</p>
         </div>
       </div>
       <div>
@@ -44,6 +44,7 @@
             <hr>
           </dl>
         </div>
+        <a  class="btn btn-dark btn-theme-colored mt-30 mt-sm-20 pl-sm-10 pr-sm-10" [routerLink]="['/AddDr' , clinic.id]" >Add Dr</a>
       </div>
     </div>
     <div class="col-sx-12 col-sm-4 col-md-4 sidebar pull-left">

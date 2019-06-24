@@ -25,21 +25,29 @@ namespace back_end.Controllers
         }
 
         // GET: api/Doctor
-        public IEnumerable<Doctor> Get()
+        public IEnumerable<Doctor> GetDoctors()
         {
             //var x = UnitOfWork;
             return UnitOfWork.drManager.GetAll().ToList();
             //return new string[] { "value1", "value2" };
         }
 
+        public IEnumerable<Doctor> GetSomeDoctors()
+        {
+            //var x = UnitOfWork;
+            return UnitOfWork.drManager.GetSomeDoctors(4);
+            //return new string[] { "value1", "value2" };
+        }
+
+
         // GET api/<controller>/5
-        public Doctor Get(int id)
+        public Doctor GetDoctorById(int id)
         {
             return UnitOfWork.drManager.GetById(id);
         }
 
         // POST api/<controller>
-        public void Post([FromBody]Doctor Doctor)
+        public void AddDr([FromBody]Doctor Doctor)
         {
             UnitOfWork.drManager.Add(Doctor);
         }

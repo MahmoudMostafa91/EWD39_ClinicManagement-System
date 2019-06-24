@@ -18,17 +18,21 @@ export class DoctorService {
   
     
     getAll() : Observable<any>{
-        return this.http.get(this.baseUrl + '/api/doctor');
+        return this.http.get(this.baseUrl + '/api/doctor/GetDoctors');
+    }  
+
+    getSomeDoctors() : Observable<any>{
+        return this.http.get(this.baseUrl + '/api/doctor/GetSomeDoctors');
     }  
 
 
     getById(id) {
-        return this.http.get( this.baseUrl + `api/doctor/${id}`);
+        return this.http.get( this.baseUrl + `api/doctor/GetDoctorById/${id}`);
     }
 
     Add(doctor:DoctorData) {
         console.log(doctor);
-         this.http.post(this.baseUrl + 'api/clinic' , doctor).subscribe();
+         this.http.post(this.baseUrl + 'api/doctor/AddDr' , doctor).subscribe();
     }
     delete(id) {
         return this.http.delete(`hamada/users/${id}`);

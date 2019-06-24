@@ -21,8 +21,8 @@ namespace back_end
                 .ContractResolver = new CamelCasePropertyNamesContractResolver();
 
             //CORS Cross-Origin
-            var cors = new EnableCorsAttribute("*", "*", "*");
-            config.EnableCors(cors);
+            //var cors = new EnableCorsAttribute("*", "*", "*");
+            //config.EnableCors(cors);
 
 
             config.Formatters.JsonFormatter.SerializerSettings
@@ -43,7 +43,7 @@ namespace back_end
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

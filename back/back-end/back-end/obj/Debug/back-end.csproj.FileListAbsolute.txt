@@ -121,7 +121,7 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addnamecoloumntoclinictable.resources
-<<<<<<< HEAD
+
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll.config
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.pdb
@@ -243,13 +243,17 @@ D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\bac
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.pdb
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.reservationform.resources
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
-=======
+
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addSpecializationcoloumntoclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addpasscolumntoclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvalidationinclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable2.resources
->>>>>>> 52f4cc85aa19180e3748dc62287218871adaf90f
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editspecilizationcolumninclinictable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.dll
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.xml
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editpatientusertableaddmorecolumns.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdoctortableaddmorecolumns.resources
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addSpecializationcoloumntoclinictable.resources
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addpasscolumntoclinictable.resources

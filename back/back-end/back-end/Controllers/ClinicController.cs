@@ -22,22 +22,25 @@ namespace back_end.Controllers
                 
             }
         }
-        
-        
-        //public ICollection<Clinic> GetClinics()
-        //{
-        //}
 
+        [HttpGet]
+        public IEnumerable<Clinic> GetSomeClinics()
+        {
+            return UnitOfWork.ClinicManager.getSomeClinics(4);
+        }
+        [HttpGet]
         // GET api/<controller>
-        public IEnumerable<Clinic> Get()
+        public IEnumerable<Clinic> GetClinics()
         {
             //var x = UnitOfWork;
             return UnitOfWork.ClinicManager.GetAll().ToList();
             //return new string[] { "value1", "value2" };
         }
 
+
+        [HttpGet]
         // GET api/<controller>/5
-        public Clinic Get(int id)
+        public Clinic GetClinicById(int id)
         {
             return UnitOfWork.ClinicManager.GetById(id);
         }
