@@ -4,19 +4,18 @@
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
             Add Report
         </button>
-        <app-report [id]='id' [vid]='vid' class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></app-report>
+        <app-report [pid]='pid' [vid]='vid' class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></app-report>
     </div>
     <div class="section-centent">
       <div class="row">
         <div class="col-md-12">
           <div class="services-tab border-10px bg-white-light">
             <ul class="nav tabs nav-tabs">
-              <li class="active"><a class="tab" href="#Personal-info" data-toggle="tab"><i
-                    class="icon-xray2"></i>Personal
-                  Info</a>
+              <li><a class="tab" href="#Personal-info" data-toggle="tab"><i
+                    class="icon-xray2"></i>Personal Info</a>
               </li>
               <li><a class="tab" href="#Vitals" data-toggle="tab"><i class="icon-heart36"></i>Vitals</a></li>
-              <li><a class="tab" href="#family-history" data-toggle="tab"><i class="icon-brain9"></i>Family history</a>
+              <li class="active"><a class="tab" href="#family-history" data-toggle="tab"><i class="icon-brain9"></i>Family history</a>
               </li>
               <li><a class="tab" href="#diseases" data-toggle="tab"><i class="icon-teeth1"></i>Diseases</a></li>
               <li><a class="tab" href="#lab-investigations" data-toggle="tab"><i class="icon-hospital35"></i>Lab
@@ -29,12 +28,12 @@
             </ul>
             <div class="tab-content">
               <!-- <app-personal-info class="tab-pane fade in active" id="Personal-info"></app-personal-info> -->
-              <app-vitals class="tab-pane fade" id="Vitals" [id]='id'></app-vitals>
-              <app-family-history class="tab-pane fade" id="family-history" [id]='id'></app-family-history>
-              <app-diseases class="tab-pane fade" id="diseases" [id]='id'></app-diseases>
-              <app-lab-investigation class="tab-pane fade" id="lab-investigations" [id]='id'></app-lab-investigation>
-              <app-visit class="tab-pane fade" id="visits" [id]='id'></app-visit>
-              <app-medications class="tab-pane fade" id="medications" [id]='id'></app-medications>
+              <app-vitals class="tab-pane fade" id="Vitals"></app-vitals>
+              <app-family-history class="tab-pane fade " id="family-history"></app-family-history>
+              <app-diseases class="tab-pane fade in active" id="diseases"></app-diseases>
+              <app-lab-investigation class="tab-pane fade" id="lab-investigations"></app-lab-investigation>
+              <app-visit class="tab-pane fade" id="visits"></app-visit>
+              <app-medications class="tab-pane fade" id="medications"></app-medications>
             </div>
           </div>
         </div>

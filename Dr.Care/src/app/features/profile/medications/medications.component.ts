@@ -25,7 +25,7 @@ medicationForm: FormGroup;
       doctor: new FormControl(),
       clinic: new FormControl(),
       from: new FormControl(),
-      to: new FormControl(),
+      period: new FormControl(),
       notes: new FormControl()
     });
   }
@@ -51,7 +51,7 @@ medicationForm: FormGroup;
      doctor: med.doctor,
      clinic: med.clinic,
      from: med.from,
-     to: med.to,
+     period: med.period,
      notes: med.notes
     }
    );

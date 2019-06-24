@@ -4,10 +4,9 @@ import { clinicdata } from '../_models/clinicdata';
 
 export interface Vital {
     id?: number;
-    patientId?: number;
+    vid?: number;
     patient?: User;
     type?: string;
     date?: string;
-    doctor?: DoctorData;
-    clinic?: clinicdata;
+    measurment?: string;
 }

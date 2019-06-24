@@ -54,6 +54,8 @@ import { DiseasesService } from './_services/_profile-services/diseases.service'
 import { DoctorService } from './_services/Doctor.service';
 import { ClinicService } from './_services/clinic.service';
 import { ReportComponent } from './features/profile/report/report.component';
+import { VitalService } from './_services/_profile-services/vitals.service';
+import { VitalTypesService } from './_services/_profile-services/vital-types.service';
 
 
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
@@ -107,7 +109,9 @@ import { ReportComponent } from './features/profile/report/report.component';
     PersonalDataService,
     DoctorService,
     ClinicService,
-    LabInvestigationService],
+    LabInvestigationService,
+    VitalService,
+    VitalTypesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

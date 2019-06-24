@@ -12,8 +12,8 @@ const routes: Routes = [
     { path: 'register', component: RegisterFormComponent },
     { path: 'login', component: LoginFormComponent },
     { path: 'addclinic', component: AddclinicFormComponent },
-    { path: 'prfile/:id/:vid', component: ProfileComponent},
-    // { path: 'profile', component: ProfileComponent },
+    { path: 'profile/:id/:vid', component: ProfileComponent},
+    { path: 'profile', component: ProfileComponent },
     { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
 
 

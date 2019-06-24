@@ -7,13 +7,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-  id;
+  pid;
   vid;
   constructor(public activateRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.vid = this.activateRoute.snapshot.paramMap.get('vid');
-    this.id = this.activateRoute.snapshot.paramMap.get('id');
+    this.pid = this.activateRoute.snapshot.paramMap.get('id');
   }
 
 }
