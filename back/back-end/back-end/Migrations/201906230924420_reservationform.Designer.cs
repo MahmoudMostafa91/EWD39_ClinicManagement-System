@@ -7,13 +7,13 @@ namespace back_end.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addnamecoloumntoclinictable : IMigrationMetadata
+    public sealed partial class reservationform : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addnamecoloumntoclinictable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(reservationform));
         
         string IMigrationMetadata.Id
         {
-            get { return "201906212021347_add name coloumn to clinic table"; }
+            get { return "201906230924420_reservationform"; }
         }
         
         string IMigrationMetadata.Source

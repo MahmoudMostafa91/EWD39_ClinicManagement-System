@@ -3,7 +3,7 @@ namespace back_end.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initdb : DbMigration
+    public partial class reservationform : DbMigration
     {
         public override void Up()
         {
@@ -40,6 +40,7 @@ namespace back_end.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
                         Desc = c.String(),
                         Review = c.Double(nullable: false),
                         Phone = c.String(),

@@ -50,8 +50,12 @@ import { LabInvestigationsComponent } from './features/Profile/lab-investigation
 import { VisitsComponent } from './features/Profile/visits/visits.component';
 import { MedicationsComponent } from './features/Profile/medications/medications.component';
 import { ClinicListingComponent } from './features/clinic-listing/clinic-listing.component';
+
 import { AllClinicsComponent } from './features/all-clinics/all-clinics.component';
 import { AllDoctorsComponent } from './features/all-doctors/all-doctors.component';
+
+import { ReservationCelendarComponent } from './features/reservation-celendar/reservation-celendar.component';
+
 
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
 
@@ -86,9 +90,12 @@ import { AllDoctorsComponent } from './features/all-doctors/all-doctors.componen
     VisitsComponent,
     MedicationsComponent,
     ClinicListingComponent,
+
     AllClinicsComponent,
     AllDoctorsComponent,
-    AddDoctorFormComponent
+    AddDoctorFormComponent,
+    ReservationCelendarComponent
+
   ],
   imports: [
     BrowserModule,
