@@ -18,7 +18,7 @@ export class ClinicListingComponent implements OnInit {
   }
 
   getClinics() {
-    this.newservice.getAll().subscribe(
+    this.newservice.getSomeClinics().subscribe(
        data => { this.clinics = data},
        err => console.error(err),
        () => console.log('done loading clinics')

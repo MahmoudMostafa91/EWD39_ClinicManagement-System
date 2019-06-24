@@ -21,6 +21,8 @@ namespace back_end.Models
         public string Name { get; set; }
         public string ImageUrl { get; set; }
         public string spectialisation { get; set; }
+        public string Degree { get; set; }
+
         [ForeignKey("Clinic")]
         public int ClinicfK { get; set; }
         public Clinic Clinic { get; set; }
@@ -29,6 +31,8 @@ namespace back_end.Models
    
         public ICollection<Operation> Operations { get; set; }
         public ICollection<User_Doctor> User_Doctors { get; set; }
+
+
 
     }
 }

@@ -126,3 +126,8 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvalidationinclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable2.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editspecilizationcolumninclinictable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.dll
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.xml
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editpatientusertableaddmorecolumns.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdoctortableaddmorecolumns.resources

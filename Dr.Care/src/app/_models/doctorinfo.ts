@@ -6,4 +6,5 @@ export interface doctorinfo
     phone?:string;
     email?:string;
     address?:string;
+    ImageUrl?:string
 }

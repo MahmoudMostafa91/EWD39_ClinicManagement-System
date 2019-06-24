@@ -14,34 +14,22 @@ export class ClinicService {
 
     constructor(private http: HttpClient) { }
 
-    // getAll()  {
-    //     // return this.http.get<any[]>(hamada/users);
-    //     return this.http.get<any[]>(this.baseUrl + 'api/clinic').subscribe((data) => {
-    //         this.clinics = data.map((response) => {
-    //           return <clinicdata>{
-    //             id: response.Id,
-    //             name: response.Name,
-    //             description:response.Desc,
-    //             phone:response.Phone,
-    //             address:response.Address,
-    //             review:response.Review
-    //           };
-    //         });
-    //     });
-    // }
-
-
+   
 
   
     
     
     getAll() : Observable<any>{
-        return this.http.get(this.baseUrl + '/api/clinic');
+        return this.http.get(this.baseUrl + '/api/clinic/GetClinics');
+    }  
+
+    getSomeClinics() : Observable<any>{
+        return this.http.get(this.baseUrl + '/api/clinic/getSomeClinics');
     }  
 
 
     getById(id) {
-        return this.http.get( this.baseUrl + `api/clinic/${id}`);
+        return this.http.get( this.baseUrl + `api/clinic/GetClinicById/${id}`);
     }
 
     Add(clinic:clinicdata) {

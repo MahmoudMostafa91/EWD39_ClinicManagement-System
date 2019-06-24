@@ -1,0 +1,59 @@
+<div *ngIf="error" class="alert alert-danger">{{error}}</div>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-push-3">
+        <h3 class="text-gray mt-0 pt-5"> Add Doctor</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+        <form [formGroup]="addDoctorForm" >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+              <div *ngIf="f.name.errors.required">Clinic Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ImageUrl">Image</label>
+            <!-- <input type="file" formControlName="ImageUrl" class="form-control" (change)="onFileChanged($event)" -->
+              <!-- [ngClass]="{ 'is-invalid': submitted && f.ImageUrl.errors }" /> -->
+              <input style="display: none" type="file" (change)="onFileSelected($event)"  #selectFile>
+              <button type="button" (click)="selectFile.click()">Select File </button>
+              <button type="button" (click)="OnUpload()">Upload</button>
+          </div>
+          <div class="form-group">
+            <label for="spectialisation">spectialisation</label>
+            <input type="text" formControlName="spectialisation" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.spectialisation.errors }" />
+            <div *ngIf="submitted && f.spectialisation.errors" class="invalid-feedback">
+              <div *ngIf="f.spectialisation.errors.required">spectialisation is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="ClinicfK">Clinic</label>
+            <input type="text" readonly [value]="this.clinic.name" formControlName="ClinicfK" class="form-control"  />
+
+          </div>
+
+
+
+
+          <div class="form-group">
+            <button (click)="AddDoctor(this.clinic.id)" [disabled]="loading" class="btn btn-primary">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+              Add
+            </button>
+            <a routerLink="/login" class="btn btn-link">Cancel</a>
+          </div>
+        
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>

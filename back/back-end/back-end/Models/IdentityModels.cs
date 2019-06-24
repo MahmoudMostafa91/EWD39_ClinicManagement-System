@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using back_end.Models.Enum;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -20,7 +22,13 @@ namespace back_end.Models
         }
         public string Name { get; set; }
         public string ImageUrl { get; set; }
-        public string FamilyHistory { get; set; }
+
+        public DateTime BirthDate { get; set; }
+
+        public Gender Gender { get; set; }
+
+        public BloodType BloodType { get; set; }
+
 
         public virtual ICollection<Operation> Operations { get; set; }
         public virtual ICollection<ReservatiopnAppointement> ReservatiopnAppointements { get; set; }

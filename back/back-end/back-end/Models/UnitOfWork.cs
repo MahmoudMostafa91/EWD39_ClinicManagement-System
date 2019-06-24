@@ -16,6 +16,7 @@ namespace back_end.Models
         {
             context = owinContext.Get<ApplicationDbContext>();
             AppUserManager = owinContext.Get<ApplicationUserManager>();
+            
            
         }
         public ApplicationUserManager AppUserManager { get; }

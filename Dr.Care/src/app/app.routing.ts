@@ -10,6 +10,9 @@ import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form
 import { ProfileComponent } from './features/profile/profile.component';
 import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
+import { AllClinicsComponent } from 'src/app/features/all-clinics/all-clinics.component';
+import { AllDoctorsComponent } from './features/all-doctors/all-doctors.component';
+import { AddDoctorFormComponent } from './features/add-doctor-form/add-doctor-form.component';
 
 const routes: Routes = [
     { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
@@ -20,9 +23,10 @@ const routes: Routes = [
     { path: 'profile', component: ProfileComponent },
     { path: 'clinicProfile/:id', component: ClinicInfoComponent },
     { path: 'doctorProfile/:id', component: DoctorProfileComponent },
-
-
-
+    { path: 'AllClinics', component: AllClinicsComponent },
+    { path: 'AllDoctors', component: AllDoctorsComponent },
+    { path: 'AddDr/:id', component: AddDoctorFormComponent },
+    { path: 'Home', component: TestHomeComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
