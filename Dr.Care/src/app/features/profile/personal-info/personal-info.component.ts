@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Medication } from 'src/app/_interfaces/medication';
 
 @Component({
-  selector: 'app-family-history',
-  templateUrl: './family-history.component.html',
-  styleUrls: ['./family-history.component.scss']
+  selector: 'app-personal-info',
+  templateUrl: './personal-info.component.html',
+  styleUrls: ['./personal-info.component.scss']
 })
-export class FamilyHistoryComponent implements OnInit {
+export class PersonalInfoComponent implements OnInit {
 med: Medication;
   constructor() { }
 
