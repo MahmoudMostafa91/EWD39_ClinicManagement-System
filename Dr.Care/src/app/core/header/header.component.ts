@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../../_services/authentication.service';
+import { clinicdata } from 'src/app/_models/clinicdata';
 
 
 @Component({
@@ -10,7 +11,16 @@ import { AuthenticationService } from '../../_services/authentication.service';
 })
 export class HeaderComponent implements OnInit {
   currentUser: any;
-
+  filterdclinics:clinicdata[];
+  private _searchterm:string;
+  get searchterm():string
+ {
+    return this._searchterm;
+ }
+ set searchterm(value:string)
+ {
+   this._searchterm=value;
+ }
   constructor
    ( 
      private router: Router,

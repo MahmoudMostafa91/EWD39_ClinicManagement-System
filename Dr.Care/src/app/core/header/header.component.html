@@ -32,7 +32,15 @@
                     <li class="m-0">
                      <a class="nav-item nav-link" (click)="logout()">Logout</a>
                     </li>
-                  </ul>
+                
+                  <li class="text-white m-0">|</li>
+                  <li class="m-0">                     
+                      <div class="form-group mx-sm-3 mb-2">                       
+                        <input type="text" class="form-control" id="inputPassword2" [(ngModel)]="searchterm" placeholder="Search">
+                      </div>
+                                       
+                  </li>
+                </ul>
                 </div>
               </div>
               <div class="col-md-3">
