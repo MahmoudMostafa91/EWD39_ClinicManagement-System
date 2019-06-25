@@ -12,7 +12,7 @@ import { BloodTypesService } from 'src/app/_services/_profile-services/blood-typ
 })
 export class PersonalInfoComponent implements OnInit {
   personalInfo: User;
-  @Input() pid;
+  @Input() pid; 
   infoForm: FormGroup;
   bloodTypes: BloodTypes[];
   pf: User;
@@ -46,12 +46,7 @@ export class PersonalInfoComponent implements OnInit {
     this.infoForm.reset();
     const y = this.value.nativeElement.value;
   }
-  onChange() {
-    const x = this.value.nativeElement.value;
-    console.log(x);
-  }
   onEdit() {
-    console.log(this.personalInfo.imgURL);
     this.infoForm.patchValue(
       {
         id: this.personalInfo.Id,
