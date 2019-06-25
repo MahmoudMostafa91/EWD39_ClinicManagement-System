@@ -1,10 +1,10 @@
 <section data-bg-img="images/pattern/p4.png">
   <div class="container pb-80">
     <div class="section-title ">
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        <button *ngIf="vid !== null" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
             Add Report
         </button>
-        <app-report [pid]='pid' [vid]='vid' class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></app-report>
+        <app-report *ngIf="vid !== null" [pid]='pid' [vid]='vid' class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></app-report>
     </div>
     <div class="section-centent">
       <div class="row">
@@ -27,13 +27,13 @@
               </li>
             </ul>
             <div class="tab-content">
-              <app-personal-info class="tab-pane fade in active" id="Personal-info"></app-personal-info>
+              <!-- <app-personal-info class="tab-pane fade in active" id="Personal-info"></app-personal-info> -->
               <app-vitals class="tab-pane fade" id="Vitals"></app-vitals>
-              <app-family-history class="tab-pane fade " id="family-history"></app-family-history>
-              <app-diseases class="tab-pane fade in active" id="diseases"></app-diseases>
-              <app-lab-investigation class="tab-pane fade" id="lab-investigations"></app-lab-investigation>
+              <app-family-history class="tab-pane fade " id="family-history" [pid]='pid' [vid]='vid'></app-family-history>
+              <app-diseases class="tab-pane fade in active" id="diseases" [pid]='pid' [vid]='vid'></app-diseases>
+              <app-lab-investigation class="tab-pane fade" id="lab-investigations" [pid]='pid' [vid]='vid'></app-lab-investigation>
               <app-visit class="tab-pane fade" id="visits"></app-visit>
-              <app-medications class="tab-pane fade" id="medications"></app-medications>
+              <app-medications class="tab-pane fade" id="medications" [pid]='pid' [vid]='vid'></app-medications>
             </div>
           </div>
         </div>

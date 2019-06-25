@@ -47,16 +47,17 @@ import { VisitService } from './_services/_profile-services/visit.service';
 import { LabInvestigationService } from './_services/_profile-services/lab-investigation.service';
 import { LabInvestigationComponent } from './features/profile/lab-investigation/lab-investigation.component';
 import { PersonalDataService } from './_services/_profile-services/personal-data.service';
-import { DiseasesComponent } from './features/profile/diseases/diseases.component';
 import { DiseasesService } from './_services/_profile-services/diseases.service';
 import { DoctorService } from './_services/Doctor.service';
 import { ClinicService } from './_services/clinic.service';
 import { ReportComponent } from './features/profile/report/report.component';
 import { VitalService } from './_services/_profile-services/vitals.service';
 import { VitalTypesService } from './_services/_profile-services/vital-types.service';
-import { PersonalInfoComponent } from './features/profile/personal-info/personal-info.component';
+// import { PersonalInfoComponent } from './features/profile/personal-info/personal-info.component';
 import { VitalsComponent } from './features/profile/vitals/vitals.component';
 import { FamilyHistoryComponent } from './features/profile/family-history/family-history.component';
+import { DiseasesComponent } from './features/profile/diseases/diseases.component';
+import { FamilyHistoryService } from './_services/_profile-services/family-history.service';
 
 
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
@@ -87,11 +88,11 @@ import { FamilyHistoryComponent } from './features/profile/family-history/family
     MedicationsComponent,
     VisitComponent,
     LabInvestigationComponent,
-    DiseasesComponent,
     ReportComponent,
-    PersonalInfoComponent,
+    // PersonalInfoComponent,
     VitalsComponent,
     FamilyHistoryComponent,
+    DiseasesComponent,
   ],
   imports: [
     BrowserModule,
@@ -113,7 +114,8 @@ import { FamilyHistoryComponent } from './features/profile/family-history/family
     ClinicService,
     LabInvestigationService,
     VitalService,
-    VitalTypesService],
+    VitalTypesService,
+    FamilyHistoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

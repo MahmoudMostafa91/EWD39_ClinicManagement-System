@@ -19,8 +19,8 @@
         <tr *ngFor='let med of medications, let i = index'>
           <td><span>{{med.name}}</span></td>
           <td><span>{{med.noOfTimes+" "}} times per {{" "+med.unitOfTime}}</span></td>
-          <td><span>{{med.doctor}}</span></td>
-          <td><span>{{med.clinic}}</span></td>
+          <td><span>{{med.doctor.name}}</span></td>
+          <td><span>{{med.clinic.name}}</span></td>
           <td><span>{{med.from}}</span></td>
           <td ><span *ngIf="med.period !== null">{{med.period}} days</span></td>
           <td class="medication-notes">
@@ -158,20 +158,19 @@
             </div>
             <div class="form-group">
               <input formControlName="noOfTimes" name="medicine_nooftimes" type="number" class="form-control form-control-sm">
-              <label class="sub-label">times per</label>
-              <select formControlName="unitOfTime" name="medicine_unitOfTime" class="form-control form-control-sm">
-                <option>day</option>
-                <option>week</option>
-                <option>month</option>
-              </select>
-              <!-- <input formControlName="unitOfTime" type="number" name="medicine_period" class="form-control form-control-sm">
-              <select formControlName="" name="medicine_period2" class="form-control form-control-sm">
+              <label  class="sub-label"> times per </label>
+              <select name="medicine_period2" formControlName="unitOfTime" class="form-control form-control-sm">
                 <option>days</option>
                 <option>weeks</option>
-                <option>months</option>
-                <option>for ever</option>
-              </select> -->
+             </select>
             </div>
+            <div class="form-group">
+                <label class="sub-label">starting from </label>
+                <input formControlName="from" name="medicine_from" type="date" class="form-control form-control-sm">
+             <label class="sub-label">, for </label>
+              <input formControlName="period" type="number" name="medicine_period" class="form-control form-control-sm">
+             <label class="sub-label"> day </label>
+                </div> 
             <div class="form-group">
               <label>Described by Dr.</label>
               <input formControlName="doctor" name="medicine_doctor" type="text" class="form-control">
@@ -179,21 +178,6 @@
             <div class="form-group">
               <label>Clinic</label>
               <input formControlName="clinic" name="medicine_clinic" type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label>from</label>
-              <input formControlName="from" name="medicine_from" type="date" class="form-control">
-            </div>
-            <!-- <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Till Now
-                </label>
-              </div>
-            </div> -->
-            <div class="form-group">
-              <label>To</label>
-              <input formControlName="period" name="medicine_to" type="date" class="form-control">
             </div>
             <div class="form-group">
               <label>Notes</label>

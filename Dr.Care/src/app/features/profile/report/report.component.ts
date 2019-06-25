@@ -8,6 +8,7 @@ import { Medication } from 'src/app/_interfaces/medication';
 import { VitalService } from 'src/app/_services/_profile-services/vitals.service';
 import { VitalTypes } from 'src/app/_interfaces/vitalTypes';
 import { VitalTypesService } from 'src/app/_services/_profile-services/vital-types.service';
+import { MedicationService } from 'src/app/_services/_profile-services/medication.service';
 
 @Component({
   selector: 'app-report',
@@ -22,7 +23,7 @@ export class ReportComponent implements OnInit {
   vitals: Vital[];
   medications: Medication[];
   reportform: FormGroup;
-  constructor(public visits: VisitService, public vit: VitalService, public vita: VitalTypesService) { }
+  constructor(public visits: VisitService, public vit: VitalService, public vita: VitalTypesService, public med: MedicationService) { }
 
   ngOnInit() {
     this.visit = this.visits.getById(Number(this.vid));
@@ -50,8 +51,7 @@ export class ReportComponent implements OnInit {
     this.medications = this.reportform.getRawValue().medications;
     this.visit.medications = this.medications;
     this.addToVitals(this.vitals);
-    // this.addToMed(this.vitals);
-    console.log(this.visit);
+    this.addToMed(this.medications);
   }
 
   addToVitals(vits: Vital[]) {
@@ -62,8 +62,20 @@ export class ReportComponent implements OnInit {
       vits[i].patient = this.visit.patient;
       this.vit.add(vits[i]);
     }
-    console.log(this.vit);
   }
+
+  addToMed(meds: Medication[]) {
+    // tslint:disable-next-line:prefer-for-of
+    for (let i = 0; i < meds.length; i++) {
+      meds[i].clinic = this.visit.clinic;
+      meds[i].doctor = this.visit.doctor;
+      meds[i].patient = this.visit.patient;
+      meds[i].from = this.visit.date;
+      meds[i].vid = this.visit.id;
+      this.med.add(meds[i]);
+    }
+  }
+
   addMed() {
     (this.reportform.controls.medications as FormArray).push(new FormGroup({
       name: new FormControl(),

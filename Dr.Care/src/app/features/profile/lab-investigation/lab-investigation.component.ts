@@ -1,7 +1,9 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { LabInvesigation } from 'src/app/_interfaces/lab-investigation';
 import { LabInvestigationService } from 'src/app/_services/_profile-services/lab-investigation.service';
 import { FormGroup, FormControl } from '@angular/forms';
+import { pipeDef } from '@angular/core/src/view';
+import { PersonalDataService } from 'src/app/_services/_profile-services/personal-data.service';
 
 @Component({
   selector: 'app-lab-investigation',
@@ -12,10 +14,12 @@ export class LabInvestigationComponent implements OnInit {
   investigations: LabInvesigation[];
   investigationForm: FormGroup;
   @Output() editedInvest: LabInvesigation;
-  constructor(public inv: LabInvestigationService) { }
+  @Input() pid;
+  @Input() vid;
+  constructor(public inv: LabInvestigationService, public us: PersonalDataService) { }
 
   ngOnInit() {
-  this.investigations = this.inv.getAll();
+  this.investigations = this.inv.getByUser(Number(this.pid));
   this.investigationForm = new FormGroup({
     id: new FormControl(),
     name: new FormControl(),
@@ -29,14 +33,18 @@ export class LabInvestigationComponent implements OnInit {
   onSave(investType: string, invest?: LabInvesigation) {
     const currentInvest = this.investigationForm.getRawValue() as LabInvesigation;
     currentInvest.type = investType;
+    currentInvest.patientId = this.pid;
+    currentInvest.patient = this.us.getById(Number(this.pid));
     if (invest === undefined) {
       this.inv.add(currentInvest);
     } else {
       this.inv.save(currentInvest);
     }
+    console.log(currentInvest);
     this.investigations = this.inv.getAll();
     this.editedInvest = undefined;
     this.investigationForm.reset();
+    console.log(this.inv);
   }
 
   onEditMode(invest: LabInvesigation) {
