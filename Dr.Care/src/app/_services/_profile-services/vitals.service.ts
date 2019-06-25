@@ -1,15 +1,27 @@
 import { Vital } from 'src/app/_interfaces/vitals';
+import { Injectable } from '@angular/core';
+import { PersonalDataService } from './personal-data.service';
 
+@Injectable()
 export class VitalService {
     vitals: Vital[];
-    constructor() {
+    constructor(public patient: PersonalDataService) {
         this.vitals = [
             {
-                id: 1, vid: 1, type: 'blood sugar', measurment: '5', date: '2019-02-01',
-                patient: {
-                    Id: 1, name: 'Soha', age: 70, bloodType: 'AB+', gender: 'Female',
-                    telephone: '01001111002', occupation: 'Hacker', adress: 'ElMa3adi', imgURL: '../../../../assets/images/services/1.jpg'
-                },
+                id: 1, vid: 1, type: 'blood sugar', measurment: '150', date: '2019-02-01', pId: 1,
+                patient: patient.getById(1)
+            },
+            {
+                id: 2, vid: 3, type: 'blood pressure', measurment: '120/80', date: '2019-02-01', pId: 2,
+                patient: patient.getById(2)
+            },
+            {
+                id: 3, vid: 1, type: 'weight', measurment: '70', date: '2019-02-01', pId: 1,
+                patient: patient.getById(1)
+            },
+            {
+                id: 4, vid: 2, type: 'height', measurment: '170', date: '2019-02-01', pId: 3,
+                patient: patient.getById(3)
             }
         ];
     }
@@ -25,7 +37,8 @@ export class VitalService {
     add(medication: Vital): boolean {
         const oldlength = this.vitals.length;
         medication.id = this.vitals.length + 10;
-        const newlength = this.vitals.push(medication);
+        this.vitals.push(medication)
+        const newlength = this.vitals.length;
         if (oldlength !== newlength) {
             return true;
         }
