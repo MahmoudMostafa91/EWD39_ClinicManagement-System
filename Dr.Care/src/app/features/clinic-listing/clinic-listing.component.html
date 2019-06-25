@@ -4,7 +4,7 @@
         <div class="row multi-row-clearfix">
           <div class="col-sm-6 col-md-3 mb-60 sm-text-center"  *ngFor="let clinic of clinics">
             <div class="team maxwidth400">
-              <div class="thumb"><img class="img-fullwidth" src="../../../assets/images/team/team2.jpg" alt=""></div>
+              <div class="thumb"><img class="img-fullwidth" [src]="clinic.imageUrl" alt=""></div>
               <div class="content border-1px p-15 bg-white-light">
   
                 <h4 class="name mb-0 mt-0">{{ clinic.name }}</h4>

@@ -40,11 +40,21 @@
     </div>
 
     <div class="form-group">
-            <label for="specialization">Specialization</label>
-            <input type="text" formControlName="specialization" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.specialization.errors }" />
-            <div *ngIf="submitted && f.specialization.errors" class="invalid-feedback">
-                <div *ngIf="f.specialization.errors.required">Specialization is required</div>
+            <label for="Specilization">Specialization</label>
+            <input type="text" formControlName="Specilization" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Specilization.errors }" />
+            <div *ngIf="submitted && f.Specilization.errors" class="invalid-feedback">
+                <div *ngIf="f.Specilization.errors.required">Specialization is required</div>
             </div>
+        </div>
+
+
+        <div class="form-group">
+                <label for="ImageUrl">Image</label>
+                <!-- <input type="file" formControlName="ImageUrl" class="form-control" (change)="onFileChanged($event)" -->
+                  <!-- [ngClass]="{ 'is-invalid': submitted && f.ImageUrl.errors }" /> -->
+                  <input style="display: none" type="file" (change)="onFileSelected($event)"  #selectFile>
+                  <button type="button" (click)="selectFile.click()">Select File </button>
+                  <button type="button" (click)="OnUpload()">Upload</button>
         </div>
 
     <div class="form-group">

@@ -22,6 +22,7 @@ export class AllDoctorsComponent implements OnInit {
        err => console.error(err),
        () => console.log('done loading clinics')
      );
+   
     }
 
 

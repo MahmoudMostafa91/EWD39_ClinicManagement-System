@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Web;
 
@@ -21,8 +22,10 @@ namespace back_end.Repository
 
         public TEntity Add(TEntity entity)
         {
-            set.Add(entity);
-            return context.SaveChanges() > 0 ? entity : null;
+                set.Add(entity);
+                return context.SaveChanges() > 0 ? entity : null;
+            
+            
         }
 
         public bool Delete(TEntity entity)

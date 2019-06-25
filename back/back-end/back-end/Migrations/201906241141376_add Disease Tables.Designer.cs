@@ -7,13 +7,13 @@ namespace back_end.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class reservationform : IMigrationMetadata
+    public sealed partial class addDiseaseTables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(reservationform));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addDiseaseTables));
         
         string IMigrationMetadata.Id
         {
-            get { return "201906230924420_reservationform"; }
+            get { return "201906241141376_add Disease Tables"; }
         }
         
         string IMigrationMetadata.Source

@@ -6,7 +6,7 @@ import { from } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { ClinicService } from 'src/app/_services/clinic.service';
 import { clinicdata } from 'src/app/_models/clinicdata';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient , HttpHeaders } from '@angular/common/http';
 
 
 
@@ -23,6 +23,9 @@ export class AddDoctorFormComponent implements OnInit {
   id;
   clinic;
   selecetdFile : File = null;
+  myForm;
+  imageRes;
+
 
 
   constructor(
@@ -40,19 +43,21 @@ export class AddDoctorFormComponent implements OnInit {
       name: ['', Validators.required],
       spectialisation: ['', Validators.required],
       ClinicfK: [ '' , Validators.required],
-      ImageUrl: [ '' ]
+      ImageUrl: [ '' ] ,
+      Degree: [ '' ] ,
     });
   }
 
   get f() { return this.addDoctorForm.controls; }
   AddDoctor(clinicId: number) {
-    console.log(clinicId);
     this.submitted = true;
     this.loading = true;
-    let myForm = this.addDoctorForm.value;
-    myForm.ClinicfK = clinicId;
-    this.DoctorService.Add(myForm);
+    this.myForm = this.addDoctorForm.value;
+    this.myForm.ClinicfK = clinicId;
+    this.myForm.ImageUrl = this.imageRes ;
+    this.DoctorService.Add(this.myForm);
     this.router.navigate(['/Home']);
+    console.log(this.myForm);
  
   }
 
@@ -72,9 +77,12 @@ export class AddDoctorFormComponent implements OnInit {
   OnUpload() {
     const fd = new FormData();
     fd.append('image' , this.selecetdFile , this.selecetdFile.name);
-    this.Http.post('http://localhost:51465/' , this.selecetdFile)
+    // const httpOptions = {
+    //   headers: new HttpHeaders({ 'Content-Type': 'multipart/form-data' })};
+    this.Http.post( 'http://localhost:51465/api/image/Upload' , fd  )
     .subscribe( res => {
       console.log(res);
+      this.imageRes = res;
     });
     }
     

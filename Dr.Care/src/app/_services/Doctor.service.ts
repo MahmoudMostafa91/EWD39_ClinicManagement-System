@@ -18,6 +18,7 @@ export class DoctorService {
   
     
     getAll() : Observable<any>{
+       
         return this.http.get(this.baseUrl + '/api/doctor/GetDoctors');
     }  
 

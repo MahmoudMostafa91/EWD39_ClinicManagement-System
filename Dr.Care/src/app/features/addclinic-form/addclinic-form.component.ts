@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import { ClinicService } from '../../_services/clinic.service';
+import { HttpClient , HttpHeaders } from '@angular/common/http';
 
 
 @Component({ templateUrl: 'addclinic-form.component.html' })
@@ -11,11 +12,16 @@ export class AddclinicFormComponent implements OnInit {
     loading = false;
     submitted = false;
     error: string;
+    selecetdFile : File = null;
+    imageRes;
+    myForm;
+
 
     constructor(
         private formBuilder: FormBuilder,
         private router: Router,
-        private clinicService: ClinicService
+        private clinicService: ClinicService,
+        private Http : HttpClient
     ) { }
 
     ngOnInit() {
@@ -25,7 +31,8 @@ export class AddclinicFormComponent implements OnInit {
             phone: ['', Validators.required],
             address: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]],
-            specialization: ['', [Validators.required]],
+            Specilization: ['', [Validators.required]],
+            ImageUrl: [ '' ] 
         });
     }
 
@@ -39,7 +46,9 @@ export class AddclinicFormComponent implements OnInit {
        
 
         this.loading = true;
-        this.clinicService.Add(this.addClinicForm.value);
+        this.myForm = this.addClinicForm.value;
+        this.myForm.ImageUrl = this.imageRes ;
+        this.clinicService.Add(this.myForm);
         // console.log(this.addClinicForm);
             // .subscribe(
             //     data => {
@@ -51,4 +60,23 @@ export class AddclinicFormComponent implements OnInit {
             //     });
 
     }
+
+
+
+    onFileSelected(event){
+        this.selecetdFile = event.target.files[0];
+    }
+  
+    OnUpload() {
+      const fd = new FormData();
+      fd.append('image' , this.selecetdFile , this.selecetdFile.name);
+      // const httpOptions = {
+      //   headers: new HttpHeaders({ 'Content-Type': 'multipart/form-data' })};
+      this.Http.post( 'http://localhost:51465/api/image/Upload' , fd  )
+      .subscribe( res => {
+        console.log(res);
+        this.imageRes = res;
+      });
+      }
+
 }

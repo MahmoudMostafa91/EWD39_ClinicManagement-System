@@ -17,18 +17,25 @@ namespace back_end.Models
         {
             Operations = new HashSet<Operation>();
             ReservatiopnAppointements = new HashSet<ReservatiopnAppointement>();
+            Vitals = new HashSet<Vital>();
             User_Clinics = new HashSet<User_Clinic>();
             User_Doctors = new HashSet<User_Doctor>();
         }
         public string Name { get; set; }
         public string ImageUrl { get; set; }
 
-        public DateTime BirthDate { get; set; }
+        public DateTime? BirthDate { get; set; }
 
-        public Gender Gender { get; set; }
+        public Gender? Gender { get; set; }
 
-        public BloodType BloodType { get; set; }
+        public BloodType? BloodType { get; set; }
+        public string Address { get; set; }
 
+        public string Job { get; set; }
+
+
+
+        public virtual ICollection<Vital> Vitals { get; set; }
 
         public virtual ICollection<Operation> Operations { get; set; }
         public virtual ICollection<ReservatiopnAppointement> ReservatiopnAppointements { get; set; }
@@ -62,6 +69,20 @@ namespace back_end.Models
         public virtual DbSet<Operation> Operations { get; set; }
         public virtual DbSet<ReservatiopnAppointement> ReservatiopnAppointements { get; set; }
         public virtual DbSet<AvailableAppointement> AvailableAppointements { get; set; }
+        public virtual DbSet<FamilyHistory> FamiliesHistories { get; set; }
+        public virtual DbSet<Vital> Vitals { get; set; }
+        public virtual DbSet<Disease> Diseases { get; set; }
+        public virtual DbSet<Medication> Medications { get; set; }
+        public virtual DbSet<LabInvestigations> LabInvestigationses { get; set; }
+        public virtual DbSet<Visit> Visits { get; set; }
+        public virtual DbSet<UserReveiw_Doctors> UserReveiwDoctors { get; set; }
+        public virtual DbSet<UserReview_Clinics> UserReviewClinics { get; set; }
+
+
+
+
+
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

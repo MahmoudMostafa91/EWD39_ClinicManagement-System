@@ -33,6 +33,11 @@
               <div *ngIf="f.spectialisation.errors.required">spectialisation is required</div>
             </div>
           </div>
+          <div class="form-group">
+              <label for="Degree">Degree</label>
+              <input type="text" formControlName="Degree" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.Degree.errors }" />
+          </div>
 
           <div class="form-group">
             <label for="ClinicfK">Clinic</label>

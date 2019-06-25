@@ -5,4 +5,5 @@ export interface DoctorData
     ImageUrl?:string;
     spectialisation?:string;
     ClinicfK?:number;
+    Degree?: string;
 }

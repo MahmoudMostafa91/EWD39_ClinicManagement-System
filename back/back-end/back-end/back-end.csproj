@@ -230,14 +230,11 @@
     <Compile Include="Controllers\ClinicController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906230924420_reservationform.cs" />
-    <Compile Include="Migrations\201906230924420_reservationform.Designer.cs">
-      <DependentUpon>201906230924420_reservationform.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201906221332441_add Specialization coloumn to clinic table.cs" />
     <Compile Include="Migrations\201906221332441_add Specialization coloumn to clinic table.Designer.cs">
@@ -271,21 +268,114 @@
     <Compile Include="Migrations\201906241012474_edit doctor table add more columns.Designer.cs">
       <DependentUpon>201906241012474_edit doctor table add more columns.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906241108259_edit clinic table add more columns.cs" />
+    <Compile Include="Migrations\201906241108259_edit clinic table add more columns.Designer.cs">
+      <DependentUpon>201906241108259_edit clinic table add more columns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241128405_add FamilyHistory and Vital Tables.cs" />
+    <Compile Include="Migrations\201906241128405_add FamilyHistory and Vital Tables.Designer.cs">
+      <DependentUpon>201906241128405_add FamilyHistory and Vital Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241141376_add Disease Tables.cs" />
+    <Compile Include="Migrations\201906241141376_add Disease Tables.Designer.cs">
+      <DependentUpon>201906241141376_add Disease Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241143179_add Disease Table.cs" />
+    <Compile Include="Migrations\201906241143179_add Disease Table.Designer.cs">
+      <DependentUpon>201906241143179_add Disease Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241227485_add Medication Table.cs" />
+    <Compile Include="Migrations\201906241227485_add Medication Table.Designer.cs">
+      <DependentUpon>201906241227485_add Medication Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241241198_edit Medication Table.cs" />
+    <Compile Include="Migrations\201906241241198_edit Medication Table.Designer.cs">
+      <DependentUpon>201906241241198_edit Medication Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241247249_add Lab Table.cs" />
+    <Compile Include="Migrations\201906241247249_add Lab Table.Designer.cs">
+      <DependentUpon>201906241247249_add Lab Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241251507_add Visit Table.cs" />
+    <Compile Include="Migrations\201906241251507_add Visit Table.Designer.cs">
+      <DependentUpon>201906241251507_add Visit Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241252321_add Visits Table.cs" />
+    <Compile Include="Migrations\201906241252321_add Visits Table.Designer.cs">
+      <DependentUpon>201906241252321_add Visits Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241254455_add type column in lab table.cs" />
+    <Compile Include="Migrations\201906241254455_add type column in lab table.Designer.cs">
+      <DependentUpon>201906241254455_add type column in lab table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241319204_test.cs" />
+    <Compile Include="Migrations\201906241319204_test.Designer.cs">
+      <DependentUpon>201906241319204_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241324150_edit user table and his relations.cs" />
+    <Compile Include="Migrations\201906241324150_edit user table and his relations.Designer.cs">
+      <DependentUpon>201906241324150_edit user table and his relations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241327385_test2.cs" />
+    <Compile Include="Migrations\201906241327385_test2.Designer.cs">
+      <DependentUpon>201906241327385_test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241330159_add vital relations.cs" />
+    <Compile Include="Migrations\201906241330159_add vital relations.Designer.cs">
+      <DependentUpon>201906241330159_add vital relations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241333351_add vital disease.cs" />
+    <Compile Include="Migrations\201906241333351_add vital disease.Designer.cs">
+      <DependentUpon>201906241333351_add vital disease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241336048_add medications relation.cs" />
+    <Compile Include="Migrations\201906241336048_add medications relation.Designer.cs">
+      <DependentUpon>201906241336048_add medications relation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241343208_edit lab table and relations.cs" />
+    <Compile Include="Migrations\201906241343208_edit lab table and relations.Designer.cs">
+      <DependentUpon>201906241343208_edit lab table and relations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241459096_edit visit table relations.cs" />
+    <Compile Include="Migrations\201906241459096_edit visit table relations.Designer.cs">
+      <DependentUpon>201906241459096_edit visit table relations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906241551136_test22.cs" />
+    <Compile Include="Migrations\201906241551136_test22.Designer.cs">
+      <DependentUpon>201906241551136_test22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906251145445_edit nullable col in user table.cs" />
+    <Compile Include="Migrations\201906251145445_edit nullable col in user table.Designer.cs">
+      <DependentUpon>201906251145445_edit nullable col in user table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AvailableAppointement.cs" />
+    <Compile Include="Models\Disease.cs" />
+    <Compile Include="Models\Enum\DiseaseStatus.cs" />
+    <Compile Include="Models\Enum\DiseaseType.cs" />
+    <Compile Include="Models\Enum\LabType.cs" />
+    <Compile Include="Models\Enum\Per.cs" />
+    <Compile Include="Models\FamilyHistory.cs" />
     <Compile Include="Models\Clinic.cs" />
     <Compile Include="Models\Days.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Enum\BloodType.cs" />
     <Compile Include="Models\Enum\Gender.cs" />
+    <Compile Include="Models\Enum\VitalType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\LabInvestigations.cs" />
+    <Compile Include="Models\Medication.cs" />
     <Compile Include="Models\Operation.cs" />
     <Compile Include="Models\ReservatiopnAppointement.cs" />
     <Compile Include="Models\UnitOfWork.cs" />
     <Compile Include="Models\User-Clinic.cs" />
     <Compile Include="Models\User-Doctor.cs" />
+    <Compile Include="Models\UserReveiw_Doctors.cs" />
+    <Compile Include="Models\UserReview_Clinics.cs" />
+    <Compile Include="Models\Visit.cs" />
+    <Compile Include="Models\Vital.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Repository\IRepository.cs" />
@@ -352,6 +442,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Photos\" />
+    <Folder Include="Views\Image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -383,9 +475,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906230924420_reservationform.resx">
-      <DependentUpon>201906230924420_reservationform.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906221332441_add Specialization coloumn to clinic table.resx">
       <DependentUpon>201906221332441_add Specialization coloumn to clinic table.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,6 +498,66 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906241012474_edit doctor table add more columns.resx">
       <DependentUpon>201906241012474_edit doctor table add more columns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241108259_edit clinic table add more columns.resx">
+      <DependentUpon>201906241108259_edit clinic table add more columns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241128405_add FamilyHistory and Vital Tables.resx">
+      <DependentUpon>201906241128405_add FamilyHistory and Vital Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241141376_add Disease Tables.resx">
+      <DependentUpon>201906241141376_add Disease Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241143179_add Disease Table.resx">
+      <DependentUpon>201906241143179_add Disease Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241227485_add Medication Table.resx">
+      <DependentUpon>201906241227485_add Medication Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241241198_edit Medication Table.resx">
+      <DependentUpon>201906241241198_edit Medication Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241247249_add Lab Table.resx">
+      <DependentUpon>201906241247249_add Lab Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241251507_add Visit Table.resx">
+      <DependentUpon>201906241251507_add Visit Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241252321_add Visits Table.resx">
+      <DependentUpon>201906241252321_add Visits Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241254455_add type column in lab table.resx">
+      <DependentUpon>201906241254455_add type column in lab table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241319204_test.resx">
+      <DependentUpon>201906241319204_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241324150_edit user table and his relations.resx">
+      <DependentUpon>201906241324150_edit user table and his relations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241327385_test2.resx">
+      <DependentUpon>201906241327385_test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241330159_add vital relations.resx">
+      <DependentUpon>201906241330159_add vital relations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241333351_add vital disease.resx">
+      <DependentUpon>201906241333351_add vital disease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241336048_add medications relation.resx">
+      <DependentUpon>201906241336048_add medications relation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241343208_edit lab table and relations.resx">
+      <DependentUpon>201906241343208_edit lab table and relations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241459096_edit visit table relations.resx">
+      <DependentUpon>201906241459096_edit visit table relations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241551136_test22.resx">
+      <DependentUpon>201906241551136_test22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906251145445_edit nullable col in user table.resx">
+      <DependentUpon>201906251145445_edit nullable col in user table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

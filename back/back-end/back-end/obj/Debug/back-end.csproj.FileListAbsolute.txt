@@ -117,11 +117,8 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Micros
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.CopyComplete
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.pdb
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.initdb.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addnamecoloumntoclinictable.resources
-
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll.config
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.pdb
@@ -243,7 +240,6 @@ D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\bac
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.pdb
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.reservationform.resources
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
-
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addSpecializationcoloumntoclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addpasscolumntoclinictable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvalidationinclinictable.resources
@@ -260,3 +256,23 @@ D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\bac
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvalidationinclinictable.resources
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable.resources
 D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable2.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editclinictableaddmorecolumns.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addFamilyHistoryandVitalTables.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addDiseaseTables.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addDiseaseTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addMedicationTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editMedicationTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addLabTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addVisitTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addVisitsTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addtypecolumninlabtable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editusertableandhisrelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test2.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvitalrelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvitaldisease.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addmedicationsrelation.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editlabtableandrelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editvisittablerelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test22.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editnullablecolinusertable.resources

@@ -8,5 +8,6 @@ export interface clinicdata
     review?:number;
     date?:Date;
     password?:string;
-    specilization?:string;
+    imageUrl?:string;
+    Specilization?: string;
 }

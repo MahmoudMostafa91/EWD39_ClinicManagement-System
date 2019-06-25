@@ -4,12 +4,14 @@
         <div class="row multi-row-clearfix">
           <div class="col-sm-6 col-md-3 mb-60 sm-text-center" *ngFor="let doctor of Doctors">
             <div class="team maxwidth400">
-              <div class="thumb"><img class="img-fullwidth" src="../../../assets/images/team/team2.jpg" alt=""></div>
+              <!-- <div style="width: 10rem; height: 10rem;">{{ doctor.ImageUrl }}</div> -->
+              <div class="thumb"><img class="img-fullwidth" [src]="doctor.imageUrl" alt=""></div>
               <div class="content border-1px p-15 bg-white-light">
   
                 <h4 class="name mb-0 mt-0">{{ doctor.name }}</h4>
   
-                <h6 class="title mt-0">{{ doctor.spectialisation }}</h6>
+                <h5 class="title mt-0">{{ doctor.spectialisation }}</h5>
+                <h5 class="title mt-0">{{ doctor.degree }}</h5>
                 <p class="mb-30">Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
                 <ul class="social-icons icon-dark icon-circled icon-theme-colored icon-sm pull-left flip">
                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>

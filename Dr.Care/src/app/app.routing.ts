@@ -19,7 +19,8 @@ import { ReservationCelendarComponent } from './features/reservation-celendar/re
 
 
 const routes: Routes = [
-    { path: '', component: TestHomeComponent , canActivate: [AuthGuard]},
+    // canActivate: [AuthGuard]
+    { path: '', component: TestHomeComponent },
     { path: 'register', component: RegisterFormComponent },
     { path: 'login', component: LoginFormComponent },
      {path: 'make_reservation', component: ReservationFormComponent },
