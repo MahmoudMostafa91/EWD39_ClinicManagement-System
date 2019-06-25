@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Medication } from 'src/app/_interfaces/medication';
 
 @Component({
   selector: 'app-family-history',
@@ -7,7 +6,7 @@ import { Medication } from 'src/app/_interfaces/medication';
   styleUrls: ['./family-history.component.scss']
 })
 export class FamilyHistoryComponent implements OnInit {
-med: Medication;
+
   constructor() { }
 
   ngOnInit() {

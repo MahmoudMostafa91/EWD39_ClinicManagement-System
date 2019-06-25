@@ -13,7 +13,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.vid = this.activateRoute.snapshot.paramMap.get('vid');
-    this.pid = this.activateRoute.snapshot.paramMap.get('id');
+    this.pid = this.activateRoute.snapshot.paramMap.get('pid');
   }
 
 }

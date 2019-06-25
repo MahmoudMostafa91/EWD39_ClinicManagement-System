@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { appRoutingModule } from './app.routing';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule , ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule , HTTP_INTERCEPTORS  } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
 
@@ -40,7 +40,9 @@ import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.c
 import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
 
 import { ProfileComponent } from './features/profile/profile.component';
-import {MedicationsComponent} from './features/profile/medications/medications.component';
+import { VitalsComponent } from './features/Profile/vitals/vitals.component';
+import { FamilyHistoryComponent } from './features/Profile/family-history/family-history.component';
+import { MedicationsComponent } from './features/profile/medications/medications.component';
 import { MedicationService } from './_services/_profile-services/medication.service';
 import { VisitComponent } from './features/profile/visit/visit.component';
 import { VisitService } from './_services/_profile-services/visit.service';
@@ -54,9 +56,9 @@ import { ClinicService } from './_services/clinic.service';
 import { ReportComponent } from './features/profile/report/report.component';
 import { VitalService } from './_services/_profile-services/vitals.service';
 import { VitalTypesService } from './_services/_profile-services/vital-types.service';
-import { PersonalInfoComponent } from './features/profile/personal-info/personal-info.component';
-import { VitalsComponent } from './features/profile/vitals/vitals.component';
-import { FamilyHistoryComponent } from './features/profile/family-history/family-history.component';
+import { PersonalInfoComponent } from './features/Profile/personal-info/personal-info.component';
+import { BloodTypesService } from './_services/_profile-services/blood-type.service';
+// import { PersonalInfoComponent } from './features/profile/personal-info/personal-info.component';
 
 
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
@@ -84,14 +86,15 @@ import { FamilyHistoryComponent } from './features/profile/family-history/family
     ClinicInfoComponent,
     AddclinicFormComponent,
     ProfileComponent,
+    VitalsComponent,
+    FamilyHistoryComponent,
     MedicationsComponent,
     VisitComponent,
     LabInvestigationComponent,
     DiseasesComponent,
     ReportComponent,
     PersonalInfoComponent,
-    VitalsComponent,
-    FamilyHistoryComponent,
+    // PersonalInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -113,7 +116,8 @@ import { FamilyHistoryComponent } from './features/profile/family-history/family
     ClinicService,
     LabInvestigationService,
     VitalService,
-    VitalTypesService],
+    VitalTypesService,
+    BloodTypesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
