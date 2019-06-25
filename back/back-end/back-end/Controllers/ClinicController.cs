@@ -46,7 +46,7 @@ namespace back_end.Controllers
         }
 
         // POST api/<controller>
-        public void Post([FromBody]Clinic clinic)
+        public void AddClinic([FromBody]Clinic clinic)
         {
             UnitOfWork.ClinicManager.Add(clinic);
         }

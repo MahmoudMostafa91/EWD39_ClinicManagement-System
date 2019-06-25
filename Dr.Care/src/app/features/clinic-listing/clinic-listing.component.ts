@@ -11,10 +11,27 @@ import { clinicdata } from 'src/app/_models/clinicdata';
 export class ClinicListingComponent implements OnInit {
 
   public clinics: clinicdata[];
+  //filterdclinics:clinicdata[];
+  //private _searchterm:string;
+//   cli: any;
+//   get searchterm():string
+//  {
+//     return this._searchterm;
+//  }
+//  set searchterm(value:string)
+//  {
+//    this._searchterm=value;
+//    this.filterdclinics= this.filterclinics(value);
+//  }
+//  filterclinics(searchstring:string)
+//  {
+//      return this.clinics.filter(clinic=>clinic.name.toLowerCase().indexOf(searchstring.toLowerCase())!==-1);
+//  }
   constructor(private newservice: ClinicService) { }
 
   ngOnInit() {
     this.getClinics();
+   // this.filterdclinics=this.clinics;
   }
 
   getClinics() {

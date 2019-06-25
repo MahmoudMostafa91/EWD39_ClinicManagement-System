@@ -3,7 +3,7 @@ namespace back_end.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class reservationform : DbMigration
+    public partial class test : DbMigration
     {
         public override void Up()
         {
@@ -29,6 +29,7 @@ namespace back_end.Migrations
                         Name = c.String(),
                         ImageUrl = c.String(),
                         spectialisation = c.String(),
+                        Degree = c.String(),
                         ClinicfK = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
@@ -40,11 +41,13 @@ namespace back_end.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Desc = c.String(),
-                        Review = c.Double(nullable: false),
-                        Phone = c.String(),
-                        Address = c.String(),
+                        Name = c.String(nullable: false),
+                        Description = c.String(),
+                        Review = c.Double(),
+                        Phone = c.String(nullable: false),
+                        Address = c.String(nullable: false),
+                        specilization = c.String(nullable: false),
+                        Password = c.String(nullable: false, maxLength: 6),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -69,7 +72,9 @@ namespace back_end.Migrations
                         Id = c.String(nullable: false, maxLength: 128),
                         Name = c.String(),
                         ImageUrl = c.String(),
-                        FamilyHistory = c.String(),
+                        BirthDate = c.DateTime(nullable: false),
+                        Gender = c.Int(nullable: false),
+                        BloodType = c.Int(nullable: false),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
                         PasswordHash = c.String(),

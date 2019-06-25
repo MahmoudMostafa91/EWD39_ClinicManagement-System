@@ -34,7 +34,7 @@ export class ClinicService {
 
     Add(clinic:clinicdata) {
         console.log(clinic);
-         this.http.post(this.baseUrl + 'api/clinic' , clinic).subscribe();
+         this.http.post(this.baseUrl + 'api/clinic/AddClinic' , clinic).subscribe();
     }
     delete(id) {
         return this.http.delete(`hamada/users/${id}`);

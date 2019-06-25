@@ -1,8 +1,11 @@
 <section>
+    <div class="form-group mx-sm-3 mb-2" >                       
+        <input type="text"  class="form-control" id="inputPassword2" [(ngModel)]="searchterm" placeholder="Search">
+      </div>
     <div class="container pb-0">
       <div class="section-content">
         <div class="row multi-row-clearfix">
-          <div class="col-sm-6 col-md-3 mb-60 sm-text-center" *ngFor="let doctor of Doctors">
+          <div class="col-sm-6 col-md-3 mb-60 sm-text-center" *ngFor="let doctor of filterdDoctors">
             <div class="team maxwidth400">
               <div class="thumb"><img class="img-fullwidth" src="../../../assets/images/team/team2.jpg" alt=""></div>
               <div class="content border-1px p-15 bg-white-light">
