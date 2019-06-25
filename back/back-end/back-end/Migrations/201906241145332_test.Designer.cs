@@ -7,13 +7,13 @@ namespace back_end.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class editdoctortableaddmorecolumns : IMigrationMetadata
+    public sealed partial class test : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(editdoctortableaddmorecolumns));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(test));
         
         string IMigrationMetadata.Id
         {
-            get { return "201906241012474_edit doctor table add more columns"; }
+            get { return "201906241145332_test"; }
         }
         
         string IMigrationMetadata.Source
