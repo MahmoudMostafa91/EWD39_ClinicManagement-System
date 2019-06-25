@@ -17,7 +17,7 @@ vitals: Vital[];
   constructor(public vit: VitalService) { }
 
   ngOnInit() {
-    this.vitals = this.vit.getAll().filter(a => a.patient.patientId === this.pid);
+    this.vitals = this.vit.getAll().filter(a => a.patient.Id === this.pid);
   }
 
 }

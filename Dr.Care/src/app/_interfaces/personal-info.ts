@@ -1,7 +1,7 @@
 import { GenericBrowserDomAdapter } from '@angular/platform-browser/src/browser/generic_browser_adapter';
 
 export interface User {
-    patientId?: number;
+    Id?: number;
     name?: string;
     age?: number;
     gender?: string;
@@ -9,7 +9,5 @@ export interface User {
     occupation?: string;
     adress?: string;
     telephone?: string;
-    weight?: number;
-    height?: number;
     imgURL?: string;
 }

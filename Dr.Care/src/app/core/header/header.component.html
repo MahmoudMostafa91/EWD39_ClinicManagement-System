@@ -1,128 +1,126 @@
-
-  
-    <!-- Header --> 
+<!-- Header -->
 
 
-  
 
-    <header id="header" class="header"  *ngIf="currentUser">
-        <div class="header-top bg-theme-colored xs-text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-9">
-                <div class="widget no-border m-0">
-                  <ul class="list-inline xs-text-center mt-5">
-                    <li class="m-0">
-                      <a class="text-white" href="#">FAQ</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
-                      <a class="text-white" href="#">Help Desk</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
-                      <a class="text-white" href="#">Support</a>
-                    </li>
-                    
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
-                      <a class="text-white" routerLink="/">Home</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
-                     <a class="nav-item nav-link" (click)="logout()">Logout</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
-                     <a class="nav-item nav-link" routerLink="/addclinic" >Add Clinic</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
-                     <a class="nav-item nav-link" routerLink="/profile" >My Profile</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
-                      <a class="text-white" href="#" [routerLink]="['/profile',5,7]">Profile</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="widget no-border m-0">
-                  <ul class="social-icons icon-sm m-0 xs-text-center text-right">
-                    <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+
+<header id="header" class="header" *ngIf="currentUser">
+  <div class="header-top bg-theme-colored xs-text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="widget no-border m-0">
+            <ul class="list-inline xs-text-center mt-5">
+              <li class="m-0">
+                <a class="text-white" href="#">FAQ</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" href="#">Help Desk</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" href="#">Support</a>
+              </li>
+
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" routerLink="/">Home</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="nav-item nav-link" (click)="logout()">Logout</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="nav-item nav-link" routerLink="/addclinic">Add Clinic</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="nav-item nav-link" routerLink="/profile">My Profile</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" href="#" [routerLink]="['/profile',2,2]">Profile</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </header>
-
-    <header id="header" class="header"  *ngIf="!currentUser">
-      <div class="header-top bg-theme-colored xs-text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9">
-              <div class="widget no-border m-0">
-                <ul class="list-inline xs-text-center mt-5">
-                  <li class="m-0">
-                    <a class="text-white" href="#">FAQ</a>
-                  </li>
-                  <li class="text-white m-0">|</li>
-                  <li class="m-0">
-                    <a class="text-white" href="#">Help Desk</a>
-                  </li>
-                  <li class="text-white m-0">|</li>
-                  <li class="m-0">
-                    <a class="text-white" href="#">Support</a>
-                  </li>
-                  
-                  <li class="text-white m-0">|</li>
-                  <li class="m-0">
-                    <a class="text-white" routerLink="/">Home</a>
-                  </li>
-                  <li class="text-white m-0">|</li>
-                  <li class="m-0">
-                    <a class="text-white" routerLink="/login">Login</a>
-                  </li>
-                  <li class="text-white m-0">|</li>
-                  <li class="m-0">
-                    <a class="text-white" routerLink="/register">Register</a>
-                  </li>
-                  <li class="text-white m-0">|</li>
-                  <li class="m-0">
-                    <a class="text-white" href="#" [routerLink]="['/profile',5,7]">Profile</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="widget no-border m-0">
-                <ul class="social-icons icon-sm m-0 xs-text-center text-right">
-                  <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
-                </ul>
-              </div>
-            </div>
+        <div class="col-md-3">
+          <div class="widget no-border m-0">
+            <ul class="social-icons icon-sm m-0 xs-text-center text-right">
+              <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
-     
+    </div>
+  </div>
+</header>
+
+<header id="header" class="header" *ngIf="!currentUser">
+  <div class="header-top bg-theme-colored xs-text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="widget no-border m-0">
+            <ul class="list-inline xs-text-center mt-5">
+              <li class="m-0">
+                <a class="text-white" href="#">FAQ</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" href="#">Help Desk</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" href="#">Support</a>
+              </li>
+
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" routerLink="/">Home</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" routerLink="/login">Login</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" routerLink="/register">Register</a>
+              </li>
+              <li class="text-white m-0">|</li>
+              <li class="m-0">
+                <a class="text-white" href="#" [routerLink]="['/profile',2,2]">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="widget no-border m-0">
+            <ul class="social-icons icon-sm m-0 xs-text-center text-right">
+              <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-        
 
 
 
-      <!-- <div class="header-nav">
+
+
+  <!-- <div class="header-nav">
   
         <div class="header-nav-wrapper navbar-scrolltofixed bg-lightest">
           <div class="container">
@@ -1225,5 +1223,4 @@
           </div>
         </div>
       </div> -->
-    </header>
-    
+</header>

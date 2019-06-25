@@ -4,11 +4,11 @@ export class VitalTypesService {
     vitalTypes: VitalTypes[];
     constructor() {
         this.vitalTypes = [
-            { id: 1, name: 'Blood Pressure'},
-            { id: 1, name: 'Blood Sugar'},
-            { id: 1, name: 'Heart Rate'},
-            { id: 1, name: 'Height'},
-            { id: 1, name: 'Weight'},
+            { id: 1, name: 'Blood Pressure' },
+            { id: 2, name: 'Blood Sugar' },
+            { id: 3, name: 'Heart Rate' },
+            { id: 4, name: 'Height' },
+            { id: 5, name: 'Weight' },
         ];
     }
 
