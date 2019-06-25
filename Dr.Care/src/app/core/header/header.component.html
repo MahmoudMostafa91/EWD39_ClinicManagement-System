@@ -5,55 +5,71 @@
 
   
 
-    <header id="header" class="header"  *ngIf="currentUser">
+    <header id="header" class="header"  >
         <div class="header-top bg-theme-colored xs-text-center">
           <div class="container">
             <div class="row">
               <div class="col-md-9">
                 <div class="widget no-border m-0">
                   <ul class="list-inline xs-text-center mt-5">
-                    <li class="m-0">
+                    <!-- <li class="m-0">
                       <a class="text-white" href="#">FAQ</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
+                    </li> -->
+                    <!-- <li class="text-white m-0">|</li>
                     <li class="m-0">
                       <a class="text-white" href="#">Help Desk</a>
-                    </li>
-                    <li class="text-white m-0">|</li>
+                    </li> -->
+                    <!-- <li class="text-white m-0">|</li>
                     <li class="m-0">
                       <a class="text-white" href="#">Support</a>
-                    </li>
+                    </li> -->
                     
-                    <li class="text-white m-0">|</li>
+                    <!-- <li class="text-white m-0">|</li> -->
                     <li class="m-0">
                       <a class="text-white" routerLink="/">Home</a>
                     </li>
+                    <li class="text-white m-0"  *ngIf="currentUser" >|</li>
+                    <li class="m-0">
+                     <a class="nav-item nav-link" *ngIf="currentUser" (click)="logout()">Logout</a>
+                    </li>
+                    <li class="text-white m-0"  *ngIf="!currentUser">|</li>
+                    <li class="m-0" *ngIf="!currentUser" >
+                     <a class="nav-item nav-link"   routerLink="/login">Login</a>
+                    </li>
+                    <li class="text-white m-0" *ngIf="!currentUser" >|</li>
+                    <li class="m-0" *ngIf="!currentUser" >
+                     <a class="nav-item nav-link"  routerLink="/register">Register</a>
+                    </li>
                     <li class="text-white m-0">|</li>
                     <li class="m-0">
-                     <a class="nav-item nav-link" (click)="logout()">Logout</a>
+                     <a class="nav-item nav-link"  routerLink="/AllClinics">Our Clinics</a>
                     </li>
+                    <li class="text-white m-0">|</li>
+                    <li class="m-0">
+                     <a class="nav-item nav-link"  routerLink="/AllDoctors">Our Doctors</a>
+                    </li>
+
 
                 
 
-                  <li class="text-white m-0">|</li>
+                  <!-- <li class="text-white m-0">|</li>
                   <li class="m-0">                     
                       <div class="form-group mx-sm-3 mb-2">                       
                         <input type="text" class="form-control" id="inputPassword2" [(ngModel)]="searchterm" placeholder="Search">
                       </div>
                                        
                   </li>
-                
+                 -->
 
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
+                    <li class="text-white m-0" *ngIf="currentUser" >|</li>
+                    <li class="m-0"*ngIf="currentUser" >
                      <a class="nav-item nav-link" routerLink="/addclinic" >Add Clinic</a>
                     </li>
-                    <li class="text-white m-0">|</li>
-                    <li class="m-0">
+                    <li class="text-white m-0" *ngIf="currentUser" >|</li>
+                    <li class="m-0" *ngIf="currentUser" >
                      <a class="nav-item nav-link" routerLink="/profile" >My Profile</a>
                     </li>
-                    <li class="text-white m-0">|</li>
-                   
+                    <!-- <li class="text-white m-0">|</li> -->
                   </ul>
                 </div>
               </div>

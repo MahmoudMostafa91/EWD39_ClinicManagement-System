@@ -1,21 +1,11 @@
- 
- <!-- external javascripts -->
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!-- JS | jquery plugin collection for this theme -->
-<script src="js/jquery-plugin-collection.js"></script>
- 
- 
- 
- <!-- Start main-content -->
- <div class="main-content">
+<!--  Start main-content -->
+<div class="main-content">
   <!-- Section: inner-header -->
   <section class="inner-header divider layer-overlay overlay-deep" data-bg-img="images/bg/bg5.jpg">
     <div class="container pt-90 pb-50">
       <!-- Section Content -->
       <div class="section-content">
-        <div class="row"> 
+        <div class="row">
           <div class="col-md-12 xs-text-center">
             <h3 class="font-28">Time Table</h3>
             <ol class="breadcrumb white mt-10">
@@ -35,7 +25,7 @@
       <div class="section-content">
         <div class="row">
           <div class="col-md-12">
-            
+
             <!-- === FC Calendar Starts === -->
             <div class="fc-timetable-wrapper">
               <!-- Fc Calendar Filter -->
@@ -48,13 +38,35 @@
                 <li><a data-filter="fc-departments-haematology" class="haematology" href="#haematology">Haematology</a></li>
               </ul>
               <!-- Fc Calendar Calendar -->
-              <div id='calendar'></div>
-            </div>
+              <table id='calendar' class='table'>
+                <thead>
+                  <tr>
+                    <!-- <li style="background-color: aqua;">
+                         Time -- Message -- Doctor
+                     </li> -->
+                     <th scope="col">Doctor</th>
+                     <th scope="col">Time</th>
+                     <th scope="col">Message</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let res of reservations">
+                      <!-- <th scope="row"  >1</th> -->
+                      <td>{{ res.doctor.name }}</td>
+                      <td>{{res.appointment_date}}</td>
+                      <td>{{res.message}}</td>
+                      <!-- <li *ngFor="let res of reservations" style="background-color: aqua;">
+                          {{res.appointment_date}} -- {{res.message}} -- {{ res.doctor.name }}
+                       </li> -->
+                  </tr>
+                </tbody>
+              </table>
+           </div>
 
             <!-- Fc Calendar Script -->
             <script>
-              $(document).ready(function() {
-                $(".filter-departments a").on("click", function(e){
+              $(document).ready(function () {
+                $(".filter-departments a").on("click", function (e) {
                   e.preventDefault();
                   var filterData = $(this).data("filter");
                   if (filterData == "all") {
@@ -65,7 +77,7 @@
                     $(".filter-departments a.active").removeClass("active");
                     $(this).addClass("active");
                     $(".fc-content-skeleton a.fc-event.hide").removeClass("hide");
-                    $(".fc-content-skeleton a.fc-event").not("."+filterData).addClass("hide");
+                    $(".fc-content-skeleton a.fc-event").not("." + filterData).addClass("hide");
                   }
                 });
 
@@ -93,130 +105,129 @@
                   allDaySlot: false,
                   editable: false,
                   eventLimit: true,
-                  windowResize: function(view) {
+                  windowResize: function (view) {
                   },
                   events: [
                     {
                       title: 'Orthopaedics Care 08:00 - 12:30',
-                      start: monday+'08:00:00',
-                      end: monday+'12:30:00',
+                      start: monday + '08:00:00',
+                      end: monday + '12:30:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-orthopaedics'
                     },
                     {
                       title: 'Orthopaedics Care 09:00 - 11:00',
-                      start: saturday+'09:00:00',
-                      end: saturday+'11:00:00',
+                      start: saturday + '09:00:00',
+                      end: saturday + '11:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-orthopaedics'
                     },
                     {
                       title: 'Orthopaedics Care 13:00 - 16:00',
-                      start: thursday+'13:00:00',
-                      end: thursday+'16:00:00',
+                      start: thursday + '13:00:00',
+                      end: thursday + '16:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-orthopaedics'
                     },
                     {
                       title: 'Haematology Care 08:00 - 09:00',
-                      start: wednesday+'08:00:00',
-                      end: wednesday+'09:00:00',
+                      start: wednesday + '08:00:00',
+                      end: wednesday + '09:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-haematology'
                     },
                     {
                       title: 'Haematology Care 11:00 - 13:00',
-                      start: tuesday+'11:00:00',
-                      end: tuesday+'13:00:00',
+                      start: tuesday + '11:00:00',
+                      end: tuesday + '13:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-haematology'
                     },
                     {
                       title: 'Haematology Care 16:00 - 19:00',
-                      start: saturday+'16:00:00',
-                      end: saturday+'19:00:00',
+                      start: saturday + '16:00:00',
+                      end: saturday + '19:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-haematology'
                     },
                     {
                       title: 'Neurology Care 14:00 - 18:00',
-                      start: tuesday+'14:00:00',
-                      end: tuesday+'18:00:00',
+                      start: tuesday + '14:00:00',
+                      end: tuesday + '18:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-neurology'
                     },
                     {
                       title: 'Neurology Care 11:00 - 14:30',
-                      start: friday+'11:00:00',
-                      end: friday+'14:30:00',
+                      start: friday + '11:00:00',
+                      end: friday + '14:30:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-neurology'
                     },
                     {
                       title: 'Cardiology Care 10:00 - 12:00',
-                      start: wednesday+'10:00:00',
-                      end: wednesday+'12:00:00',
+                      start: wednesday + '10:00:00',
+                      end: wednesday + '12:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-cardiology'
                     },
                     {
                       title: 'Cardiology Care 16:30 - 8:30:',
-                      start: friday+'16:30:00',
-                      end: friday+'18:30:00',
+                      start: friday + '16:30:00',
+                      end: friday + '18:30:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-cardiology'
                     },
                     {
                       title: 'Cardiology Care 11:30 - 13:00',
-                      start: sunday+'11:30:00',
-                      end: sunday+'13:00:00',
+                      start: sunday + '11:30:00',
+                      end: sunday + '13:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-cardiology'
                     },
                     {
                       title: 'Dental Care 14:00 - 16:30',
-                      start: monday+'14:00:00',
-                      end: monday+'16:30:00',
+                      start: monday + '14:00:00',
+                      end: monday + '16:30:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-dental'
                     },
                     {
                       title: 'Dental Care 17:00 - 19:00',
-                      start: wednesday+'17:00:00',
-                      end: wednesday+'19:00:00',
+                      start: wednesday + '17:00:00',
+                      end: wednesday + '19:00:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-dental'
                     },
                     {
                       title: 'Dental Care 08:00 - 10:30',
-                      start: sunday+'08:00:00',
-                      end: sunday+'10:30:00',
+                      start: sunday + '08:00:00',
+                      end: sunday + '10:30:00',
                       url: 'page-department1.html',
                       className: 'fc-departments-dental'
                     }
                   ]
                 });
-                
+
               });
-              
+
               //fix hour range
-              $( window ).load(function() {
-                $("#calendar .fc-axis.fc-time").each(function() {
+              $(window).load(function () {
+                $("#calendar .fc-axis.fc-time").each(function () {
                   var each_range = $(this).children('span').html();
                   var range_array = each_range.split(' - ');
-                  if( range_array[0] == range_array[1] ) {
+                  if (range_array[0] == range_array[1]) {
                     var range_end_hour = range_array[1].split(':');
                     var h = parseInt(range_end_hour[0], 10) + 1;
-                    $(this).children('span').html(range_array[0] + ' - ' + h + ':' + range_end_hour[1] )
+                    $(this).children('span').html(range_array[0] + ' - ' + h + ':' + range_end_hour[1])
                   }
                 });
-                if(window.location.hash) {
-                  var hash = document.URL.substr(document.URL.indexOf('#')+1);
-                  $(".filter-departments a."+hash).trigger('click');
+                if (window.location.hash) {
+                  var hash = document.URL.substr(document.URL.indexOf('#') + 1);
+                  $(".filter-departments a." + hash).trigger('click');
                 }
               });
             </script>
-            <!-- === FC Calendar Ends === -->
 
           </div>
         </div>
@@ -224,6 +235,3 @@
     </div>
   </section>
 </div>
-<!-- end main-content -->
-<!-- JS | Custom script for all pages -->
-<script src="js/custom.js"></script>

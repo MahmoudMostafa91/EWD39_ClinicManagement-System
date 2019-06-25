@@ -236,44 +236,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-
-    <Compile Include="Migrations\201906221332441_add Specialization coloumn to clinic table.cs" />
-    <Compile Include="Migrations\201906221332441_add Specialization coloumn to clinic table.Designer.cs">
-      <DependentUpon>201906221332441_add Specialization coloumn to clinic table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906230909475_add pass column to clinic table.cs" />
-    <Compile Include="Migrations\201906230909475_add pass column to clinic table.Designer.cs">
-      <DependentUpon>201906230909475_add pass column to clinic table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906230912350_add validation in clinic table.cs" />
-    <Compile Include="Migrations\201906230912350_add validation in clinic table.Designer.cs">
-      <DependentUpon>201906230912350_add validation in clinic table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906230941539_edit desc column in clinic table.cs" />
-    <Compile Include="Migrations\201906230941539_edit desc column in clinic table.Designer.cs">
-      <DependentUpon>201906230941539_edit desc column in clinic table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906230942429_edit desc column in clinic table 2.cs" />
-    <Compile Include="Migrations\201906230942429_edit desc column in clinic table 2.Designer.cs">
-      <DependentUpon>201906230942429_edit desc column in clinic table 2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906231539003_edit specilization column in clinic table.cs" />
-    <Compile Include="Migrations\201906231539003_edit specilization column in clinic table.Designer.cs">
-      <DependentUpon>201906231539003_edit specilization column in clinic table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906241009059_edit patient user table add more columns.cs" />
-    <Compile Include="Migrations\201906241009059_edit patient user table add more columns.Designer.cs">
-      <DependentUpon>201906241009059_edit patient user table add more columns.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906241012474_edit doctor table add more columns.cs" />
-    <Compile Include="Migrations\201906241012474_edit doctor table add more columns.Designer.cs">
-      <DependentUpon>201906241012474_edit doctor table add more columns.cs</DependentUpon>
-
-    <Compile Include="Migrations\201906241145332_test.cs" />
-    <Compile Include="Migrations\201906241145332_test.Designer.cs">
-      <DependentUpon>201906241145332_test.cs</DependentUpon>
-
-    </Compile>
     <Compile Include="Migrations\201906241108259_edit clinic table add more columns.cs" />
     <Compile Include="Migrations\201906241108259_edit clinic table add more columns.Designer.cs">
       <DependentUpon>201906241108259_edit clinic table add more columns.cs</DependentUpon>
@@ -358,18 +320,18 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AvailableAppointement.cs" />
-    <Compile Include="Models\Disease.cs" />
-    <Compile Include="Models\Enum\DiseaseStatus.cs" />
-    <Compile Include="Models\Enum\DiseaseType.cs" />
-    <Compile Include="Models\Enum\LabType.cs" />
-    <Compile Include="Models\Enum\Per.cs" />
-    <Compile Include="Models\FamilyHistory.cs" />
     <Compile Include="Models\Clinic.cs" />
     <Compile Include="Models\Days.cs" />
+    <Compile Include="Models\Disease.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Enum\BloodType.cs" />
+    <Compile Include="Models\Enum\DiseaseStatus.cs" />
+    <Compile Include="Models\Enum\DiseaseType.cs" />
     <Compile Include="Models\Enum\Gender.cs" />
+    <Compile Include="Models\Enum\LabType.cs" />
+    <Compile Include="Models\Enum\Per.cs" />
     <Compile Include="Models\Enum\VitalType.cs" />
+    <Compile Include="Models\FamilyHistory.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\LabInvestigations.cs" />
     <Compile Include="Models\Medication.cs" />
@@ -398,6 +360,14 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Photos\1.png" />
+    <Content Include="Photos\4.jpg" />
+    <Content Include="Photos\doctor.png" />
+    <Content Include="Photos\iphone.jpg" />
+    <Content Include="Photos\p2.jpg" />
+    <Content Include="Photos\p2f.jpg" />
+    <Content Include="Photos\services-details.jpg" />
+    <Content Include="Photos\single-img.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -448,8 +418,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Photos\" />
-    <Folder Include="Views\Image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -481,34 +449,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906221332441_add Specialization coloumn to clinic table.resx">
-      <DependentUpon>201906221332441_add Specialization coloumn to clinic table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906230909475_add pass column to clinic table.resx">
-      <DependentUpon>201906230909475_add pass column to clinic table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906230912350_add validation in clinic table.resx">
-      <DependentUpon>201906230912350_add validation in clinic table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906230941539_edit desc column in clinic table.resx">
-      <DependentUpon>201906230941539_edit desc column in clinic table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906230942429_edit desc column in clinic table 2.resx">
-      <DependentUpon>201906230942429_edit desc column in clinic table 2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906231539003_edit specilization column in clinic table.resx">
-      <DependentUpon>201906231539003_edit specilization column in clinic table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906241009059_edit patient user table add more columns.resx">
-      <DependentUpon>201906241009059_edit patient user table add more columns.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906241012474_edit doctor table add more columns.resx">
-      <DependentUpon>201906241012474_edit doctor table add more columns.cs</DependentUpon>
-
-    <EmbeddedResource Include="Migrations\201906241145332_test.resx">
-      <DependentUpon>201906241145332_test.cs</DependentUpon>
-
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906241108259_edit clinic table add more columns.resx">
       <DependentUpon>201906241108259_edit clinic table add more columns.cs</DependentUpon>
     </EmbeddedResource>

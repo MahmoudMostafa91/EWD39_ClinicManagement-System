@@ -35,12 +35,11 @@ export class AllClinicsComponent implements OnInit {
 
   ngOnInit() {
       this.getClinics();
-       this.filterdclinics=this.clinics;
   }
 
   getClinics() {
     this.newservice.getAll().subscribe(
-       data => { this.clinics = data },
+       data => { this.clinics = data , this.filterdclinics=this.clinics; },
        err => console.error(err),
        () => console.log('done loading clinics')
      );

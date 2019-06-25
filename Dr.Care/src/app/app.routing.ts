@@ -20,18 +20,18 @@ import { ReservationCelendarComponent } from './features/reservation-celendar/re
 
 const routes: Routes = [
     // canActivate: [AuthGuard]
-    { path: '', component: TestHomeComponent },
+    { path: '' , component: TestHomeComponent  },
     { path: 'register', component: RegisterFormComponent },
     { path: 'login', component: LoginFormComponent },
-     {path: 'make_reservation', component: ReservationFormComponent },
-    { path: 'addclinic', component: AddclinicFormComponent },
-    { path: 'profile', component: ProfileComponent },
-    { path: 'view_reservation', component: ReservationCelendarComponent},
-    { path: 'clinicProfile/:id', component: ClinicInfoComponent },
-    { path: 'doctorProfile/:id', component: DoctorProfileComponent },
-    { path: 'AllClinics', component: AllClinicsComponent },
+    {path: 'make_reservation/:id', component: ReservationFormComponent , canActivate: [AuthGuard] },
+    { path: 'addclinic', component: AddclinicFormComponent , canActivate: [AuthGuard]},
+    { path: 'profile', component: ProfileComponent , canActivate: [AuthGuard]},
+    { path: 'view_reservation', component: ReservationCelendarComponent , canActivate: [AuthGuard]},
+    { path: 'clinicProfile/:id', component: ClinicInfoComponent , canActivate: [AuthGuard] },
+    { path: 'doctorProfile/:id', component: DoctorProfileComponent , canActivate: [AuthGuard]},
+    { path: 'AllClinics', component: AllClinicsComponent  },
     { path: 'AllDoctors', component: AllDoctorsComponent },
-    { path: 'AddDr/:id', component: AddDoctorFormComponent },
+    { path: 'AddDr/:id', component: AddDoctorFormComponent , canActivate: [AuthGuard]},
     { path: 'Home', component: TestHomeComponent },
 
     // otherwise redirect to home

@@ -1,4 +1,26 @@
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.CoreCompileInputs.cache
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editclinictableaddmorecolumns.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addFamilyHistoryandVitalTables.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addDiseaseTables.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addDiseaseTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addMedicationTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editMedicationTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addLabTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addVisitTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addVisitsTable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addtypecolumninlabtable.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editusertableandhisrelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test2.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvitalrelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvitaldisease.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addmedicationsrelation.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editlabtableandrelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editvisittablerelations.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test22.resources
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editnullablecolinusertable.resources
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll.config
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.pdb
@@ -56,6 +78,7 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Micros
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Owin.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Host.SystemWeb.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Cookies.dll
@@ -83,6 +106,8 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Razor.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\WebGrease.dll
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.xml
+E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Net.Http.Formatting.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Cors.xml
@@ -101,7 +126,6 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Entity
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Core.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Owin.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Host.SystemWeb.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.xml
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Facebook.xml
@@ -117,292 +141,3 @@ E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Micros
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.CopyComplete
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.dll
 E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.pdb
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
-
-
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addnamecoloumntoclinictable.resources
-
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll.config
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.pdb
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csc.exe
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csc.exe.config
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csc.rsp
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csi.exe
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csi.exe.config
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csi.rsp
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.Managed.Core.targets
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.AppContext.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Collections.Immutable.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Console.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.Compression.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.FileSystem.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.Pipes.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Reflection.Metadata.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.AccessControl.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Claims.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Principal.Windows.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.ValueTuple.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.XmlDocument.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.XPath.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\vbc.exe
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\vbc.exe.config
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\vbc.rsp
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\VBCSCompiler.exe
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\VBCSCompiler.exe.config
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Antlr3.Runtime.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.SqlServer.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Core.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Owin.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Host.SystemWeb.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Cookies.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Facebook.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Google.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.OAuth.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Twitter.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Web.Infrastructure.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Newtonsoft.Json.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Owin.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Diagnostics.DiagnosticSource.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Net.Http.Formatting.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Cors.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Helpers.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Cors.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Owin.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.WebHost.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Mvc.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Optimization.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Razor.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Deployment.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Razor.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\WebGrease.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Net.Http.Formatting.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Cors.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Newtonsoft.Json.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Helpers.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.WebHost.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Mvc.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Optimization.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Razor.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Deployment.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Razor.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Antlr3.Runtime.pdb
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.SqlServer.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Core.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Owin.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Host.SystemWeb.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Facebook.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Cookies.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Google.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Twitter.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.OAuth.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Owin.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Diagnostics.DiagnosticSource.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.CoreCompileInputs.cache
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.CopyComplete
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.dll
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.pdb
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.reservationform.resources
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addSpecializationcoloumntoclinictable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addpasscolumntoclinictable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvalidationinclinictable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable2.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editspecilizationcolumninclinictable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.dll
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.xml
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editpatientusertableaddmorecolumns.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdoctortableaddmorecolumns.resources
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addSpecializationcoloumntoclinictable.resources
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addpasscolumntoclinictable.resources
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvalidationinclinictable.resources
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable.resources
-D:\New folder\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editdesccolumninclinictable2.resources
-
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editclinictableaddmorecolumns.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addFamilyHistoryandVitalTables.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addDiseaseTables.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addDiseaseTable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addMedicationTable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editMedicationTable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addLabTable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addVisitTable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addVisitsTable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addtypecolumninlabtable.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editusertableandhisrelations.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test2.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvitalrelations.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addvitaldisease.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.addmedicationsrelation.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editlabtableandrelations.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editvisittablerelations.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test22.resources
-E:\Eng\ITI\My-GP\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.editnullablecolinusertable.resources
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll.config
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\back-end.pdb
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csc.exe
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csc.exe.config
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csc.rsp
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csi.exe
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csi.exe.config
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\csi.rsp
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.AppContext.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Console.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.Compression.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.IO.Pipes.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Claims.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.ValueTuple.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\vbc.exe
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\vbc.exe.config
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\vbc.rsp
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\VBCSCompiler.exe
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Antlr3.Runtime.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.SqlServer.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Newtonsoft.Json.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Owin.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Net.Http.Formatting.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Cors.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Helpers.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Cors.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Owin.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.WebHost.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Mvc.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Optimization.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Razor.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Razor.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\WebGrease.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Cors.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Net.Http.Formatting.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Cors.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Newtonsoft.Json.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Helpers.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.WebHost.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Mvc.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Optimization.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Razor.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.WebPages.Razor.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Antlr3.Runtime.pdb
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\EntityFramework.SqlServer.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Web.Http.Owin.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\System.Diagnostics.DiagnosticSource.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csprojAssemblyReference.cache
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.CoreCompileInputs.cache
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.CopyComplete
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.dll
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.pdb
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back_end.Migrations.test.resources
-C:\Users\Soha\Documents\GitHub\EWD39_ClinicManagement-System\back\back-end\back-end\obj\Debug\back-end.csproj.GenerateResource.cache
-

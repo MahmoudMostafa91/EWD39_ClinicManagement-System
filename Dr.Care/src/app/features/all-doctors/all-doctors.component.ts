@@ -31,12 +31,11 @@ export class AllDoctorsComponent implements OnInit {
 
   ngOnInit() {
     this.getDoctors();
-    this.filterdDoctors=this.Doctors;
   }
 
   getDoctors(){
     this.newservice.getAll().subscribe(
-      (data) => { this.Doctors = data;},
+      (data) => { this.Doctors = data , this.filterdDoctors=this.Doctors;},
        err => console.error(err),
        () => console.log('done loading clinics')
      );
