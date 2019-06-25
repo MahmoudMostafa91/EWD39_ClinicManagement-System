@@ -11,7 +11,17 @@ export class VisitService {
             {
                 id: 1, date: '2019-01-01', time: '01:30 pm', clinic: { id: 1, name: 'ITI' }, patientId: 1,
                 doctor: { id: 1, name: 'Hamada' }, specialization: 'Dentist 1', type: 'previous',
-                patient: vS.getById(1)
+                patient: vS.getById(1),
+                complaints: 'One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto',
+                diagnosis: 'One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto',
+                procedures: 'One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto',
+                medications: [{name: 'mega', noOfTimes: 5, unitOfTime: 'day', from: '2019-02-05', period: 21,
+                 notes: 'One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto'},
+                 {name: 'mega', noOfTimes: 5, unitOfTime: 'day', from: '2019-02-05', period: 21,
+                 notes: 'One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto'}],
+                vitals: [{type: 'Blood Pressure', measurment: '80/120'},
+                {type: 'blood sugar', measurment: '200'},
+                {type: 'weight', measurment: '60'}]
             },
             {
                 id: 2, date: '2019-02-01', time: '02:30 pm', clinic: { id: 1, name: 'ITI' }, patientId: 2,

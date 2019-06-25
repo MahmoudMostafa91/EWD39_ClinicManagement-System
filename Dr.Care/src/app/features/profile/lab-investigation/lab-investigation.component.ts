@@ -33,18 +33,17 @@ export class LabInvestigationComponent implements OnInit {
   onSave(investType: string, invest?: LabInvesigation) {
     const currentInvest = this.investigationForm.getRawValue() as LabInvesigation;
     currentInvest.type = investType;
-    currentInvest.patientId = this.pid;
+    currentInvest.patientId = Number(this.pid);
     currentInvest.patient = this.us.getById(Number(this.pid));
     if (invest === undefined) {
       this.inv.add(currentInvest);
     } else {
+      currentInvest.id = invest.id;
       this.inv.save(currentInvest);
     }
-    console.log(currentInvest);
-    this.investigations = this.inv.getAll();
+    this.investigations = this.inv.getByUser(Number(this.pid));
     this.editedInvest = undefined;
     this.investigationForm.reset();
-    console.log(this.inv);
   }
 
   onEditMode(invest: LabInvesigation) {

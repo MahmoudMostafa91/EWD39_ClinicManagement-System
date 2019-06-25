@@ -53,7 +53,7 @@ export class DiseasesComponent implements OnInit {
     let disease;
     if (type === 'Chronic') {
       disease = this.ChdieseaseForm.getRawValue() as Diseases;
-      disease.patientId = this.pid;
+      disease.patientId = Number(this.pid);
       disease.patient = this.us.getById(Number(this.pid));
       disease.type = type;
       this.diseases1.add(disease);
@@ -62,7 +62,7 @@ export class DiseasesComponent implements OnInit {
 
     } else if (type === 'Current') {
       disease = this.CdieseaseForm.getRawValue() as Diseases;
-      disease.patientId = this.pid;
+      disease.patientId = Number(this.pid);
       disease.patient = this.us.getById(Number(this.pid));
       disease.type = type;
       this.diseases1.add(disease);
@@ -70,7 +70,7 @@ export class DiseasesComponent implements OnInit {
       this.CdieseaseForm.reset();
     } else {
       disease = this.PdieseaseForm.getRawValue() as Diseases;
-      disease.patientId = this.pid;
+      disease.patientId = Number(this.pid);
       disease.patient = this.us.getById(Number(this.pid));
       disease.type = type;
       this.diseases1.add(disease);

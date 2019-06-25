@@ -102,6 +102,7 @@ import { BloodTypesService } from './_services/_profile-services/blood-type.serv
     DiseasesComponent,
     PersonalInfoComponent,
     // PersonalInfoComponent
+    MedicationsComponent
   ],
   imports: [
     BrowserModule,

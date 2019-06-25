@@ -22,7 +22,7 @@ medicationForm: FormGroup;
   }
 
   ngOnInit() {
-    this.medications = this.md.getAll().filter(m => m.patientId === Number(this.pid));
+    this.medications = this.md.getByUser(Number(this.pid));
     this.medicationForm = new FormGroup({
       id: new FormControl(),
       name: new FormControl(),
@@ -38,29 +38,35 @@ medicationForm: FormGroup;
 
   onSave(med?: Medication) {
     if (med === undefined) {
-      med = this.medicationForm.getRawValue() as Medication;
-      med.patientId = this.pid;
-      med.patient = this.us.getById(Number(this.pid));
+      med = {clinic: {}, doctor: {}};
       med.clinic.name = this.medicationForm.getRawValue().clinic;
       med.doctor.name = this.medicationForm.getRawValue().doctor;
+      med.name = this.medicationForm.getRawValue().name;
+      med.noOfTimes = this.medicationForm.getRawValue().noOfTimes;
+      med.unitOfTime = this.medicationForm.getRawValue().unitOfTime;
+      med.from = this.medicationForm.getRawValue().from;
+      med.period = this.medicationForm.getRawValue().period;
+      med.notes = this.medicationForm.getRawValue().notes;
+      med.patientId = Number(this.pid);
+      med.patient = this.us.getById(Number(this.pid));
       this.md.add(med);
     } else {
-      med = this.medicationForm.getRawValue() as Medication;
-      med.id = this.editedMed.id;
-      med.patientId = this.pid;
-      med.patient = this.us.getById(Number(this.pid));
       med.clinic.name = this.medicationForm.getRawValue().clinic;
       med.doctor.name = this.medicationForm.getRawValue().doctor;
-      // med.vid = this.vid;
-      // med.clinic = this.vs.getById(Number(this.vid)).clinic;
-      // med.doctor = this.vs.getById(Number(this.vid)).doctor;
+      med.name = this.medicationForm.getRawValue().name;
+      med.noOfTimes = this.medicationForm.getRawValue().noOfTimes;
+      med.unitOfTime = this.medicationForm.getRawValue().unitOfTime;
+      med.from = this.medicationForm.getRawValue().from;
+      med.period = this.medicationForm.getRawValue().period;
+      med.notes = this.medicationForm.getRawValue().notes;
+      med.patientId = Number(this.pid);
+      med.patient = this.us.getById(Number(this.pid));
+      med.id = this.editedMed.id;
       this.md.save(med);
     }
-    this.medications = this.md.getAll();
+    this.medications = this.md.getByUser(Number(this.pid));
     this.editedMed = undefined;
     this.medicationForm.reset();
-    console.log(med);
-    console.log(this.md);
   }
 
   onEditMode(med: Medication) {
@@ -79,10 +85,7 @@ medicationForm: FormGroup;
   }
 
   onDelete(med: any) {
-    console.log(med as Medication);
     this.md.delete((med as Medication).id);
     this.medications = this.md.getAll();
-    console.log(this.medications);
-    console.log(this.md);
   }
 }
