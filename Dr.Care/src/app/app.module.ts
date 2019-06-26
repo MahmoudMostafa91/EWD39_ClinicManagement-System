@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { appRoutingModule } from './app.routing';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule , ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule , HTTP_INTERCEPTORS  } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-
+import {   } from 'src/app/features/profile/personal-info';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -40,9 +40,9 @@ import { ReservationFormComponent } from './features/reservation-form/reservatio
 import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
 import { AddDoctorFormComponent } from 'src/app/features/add-doctor-form/add-doctor-form.component';
+// import { DoctorComponent } from './features/doctor/doctor.component';
 
 import { ProfileComponent } from './features/profile/profile.component';
-import { PersonalInfoComponent } from './features/Profile/personal-info/personal-info.component';
 import { VitalsComponent } from './features/Profile/vitals/vitals.component';
 import { FamilyHistoryComponent } from './features/Profile/family-history/family-history.component';
 import { DiseasesComponent } from './features/Profile/diseases/diseases.component';
@@ -55,6 +55,27 @@ import { AllClinicsComponent } from './features/all-clinics/all-clinics.componen
 import { AllDoctorsComponent } from './features/all-doctors/all-doctors.component';
 
 import { ReservationCelendarComponent } from './features/reservation-celendar/reservation-celendar.component';
+
+import { MedicationService } from './_services/_profile-services/medication.service';
+import { VisitComponent } from './features/profile/visit/visit.component';
+import { VisitService } from './_services/_profile-services/visit.service';
+import { LabInvestigationService } from './_services/_profile-services/lab-investigation.service';
+import { LabInvestigationComponent } from './features/profile/lab-investigation/lab-investigation.component';
+import { PersonalDataService } from './_services/_profile-services/personal-data.service';
+import { DiseasesService } from './_services/_profile-services/diseases.service';
+import { DoctorService } from './_services/Doctor.service';
+import { ClinicService } from './_services/clinic.service';
+import { ReportComponent } from './features/profile/report/report.component';
+import { VitalService } from './_services/_profile-services/vitals.service';
+import { VitalTypesService } from './_services/_profile-services/vital-types.service';
+// import { PersonalInfoComponent } from './features/profile/personal-info/personal-info.component';
+// import { VitalsComponent } from './features/profile/vitals/vitals.component';
+// import { FamilyHistoryComponent } from './features/profile/family-history/family-history.component';
+
+import { FamilyHistoryService } from './_services/_profile-services/family-history.service';
+import { PersonalInfoComponent } from './features/Profile/personal-info/personal-info.component';
+import { BloodTypesService } from './_services/_profile-services/blood-type.service';
+// import { PersonalInfoComponent } from './features/profile/personal-info/personal-info.component';
 
 
 // import { DoctorListingComponent } from './features/doctor-listing/doctor-listing.component';
@@ -69,6 +90,7 @@ import { ReservationCelendarComponent } from './features/reservation-celendar/re
     FooterComponent,
     DoctorListingComponent,
     ReservationFormComponent,
+
     RegisterFormComponent,
     TestHomeComponent,
     LoginFormComponent,
@@ -82,9 +104,15 @@ import { ReservationCelendarComponent } from './features/reservation-celendar/re
     ClinicInfoComponent,
     AddclinicFormComponent,
     ProfileComponent,
-    PersonalInfoComponent,
     VitalsComponent,
     FamilyHistoryComponent,
+    MedicationsComponent,
+    VisitComponent,
+    LabInvestigationComponent,
+    ReportComponent,
+    // PersonalInfoComponent,
+    // VitalsComponent,
+    // FamilyHistoryComponent,
     DiseasesComponent,
     LabInvestigationsComponent,
     VisitsComponent,
@@ -96,6 +124,9 @@ import { ReservationCelendarComponent } from './features/reservation-celendar/re
     AddDoctorFormComponent,
     ReservationCelendarComponent
 
+    PersonalInfoComponent,
+    // PersonalInfoComponent
+    MedicationsComponent
   ],
   imports: [
     BrowserModule,
@@ -108,7 +139,18 @@ import { ReservationCelendarComponent } from './features/reservation-celendar/re
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-    fakeBackendProvider],
+    fakeBackendProvider,
+    MedicationService,
+    VisitService,
+    DiseasesService,
+    PersonalDataService,
+    DoctorService,
+    ClinicService,
+    LabInvestigationService,
+    VitalService,
+    VitalTypesService,
+    FamilyHistoryService,
+    BloodTypesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,134 @@
+<!-- Visits -->
+<!-- <div class="tab-pane fade" id="tab16"> -->
+
+
+  <div class="content">
+
+    <table class="table-hover table-condensed wide-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Clinic</th>
+          <th>Doctor</th>
+          <th>Specialization</th>
+          <th>Report</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vis of visits">
+          <td><span>{{vis.date}}</span></td>
+          <td><span>{{vis.time}}</span></td>
+          <td><a href="">{{vis.clinic.name}}</a></td>
+          <td><a href="">{{vis.doctor.name}}</a></td>
+          <td><span>{{vis.specialization}}</span></td>
+          <td><a (click)="onReportChoosing(vis.id)" data-toggle="modal" href="#ReportViewModal" >Report</a></td>
+          <td>{{vis.type}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<!-- </div> -->
+<div *ngIf="choosedVisit !== undefined" class="modal fade bs-example-modal-lg" id="ReportViewModal" tabindex="-1" role="dialog" aria-labelledby="ReportViewModalLabel">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="ReportViewModalLabel">Medical Report</h4>
+    </div>
+    <div class="modal-body">
+      
+        <!-- form -->
+   
+                
+                <div class="form-group form-section">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="Example">Patient Name</label></td>
+                                <td><label for="Example">: {{choosedVisit.patient.name}}</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Example">Clinic Name</label></td>
+                                <td><label for="Example">: {{choosedVisit.clinic.name}}</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Example">Doctor Name</label></td>
+                                <td><label for="Example">: {{choosedVisit.doctor.name}}</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Example">Date</label></td>
+                                <td><label for="Example">: {{choosedVisit.date}}</label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="form-section">
+                    <div  class="form-group">
+                        <td><label for="Example">Complaints</label></td>
+                        <td><label for="Example">: {{choosedVisit.complaints}}</label></td>
+                    </div>
+                    <div class="form-group">
+                        <td><label for="Example">Procedures</label></td>
+                        <td><label for="Example">: {{choosedVisit.procedures}}</label></td>
+                    </div>
+                    <div class="form-group">
+                        <td><label for="Example">Diagnosis</label></td>
+                        <td><label for="Example">: {{choosedVisit.diagnosis}}</label></td>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                      <label>Vitals </label>
+                      <div class="sub-form-section">
+                          <div *ngFor="let vt of choosedVisit.vitals, let i = index" class="form-group">
+                              <td><label for="Example">{{vt.type}}</label></td>
+                              <td><label for="Example">: {{vt.measurment}}</label></td>
+                          </div>
+                      </div>
+                </div>
+
+                <div class="last-form-section">
+                        <label>Medications </label>
+                        
+                          <div *ngFor="let md of choosedVisit.medications, let i = index" class="sub-form-section">
+                          <div class="form-group">
+                              <td><label for="Example">Name</label></td>
+                              <td><label for="Example">: {{md.name}}</label></td>
+                          </div>
+                          <div class="form-group">
+                              <td><label for="Example">Number of times</label></td>
+                              <td>
+                                <label>{{md.noOfTimes}}</label>
+                                <label  class="sub-label"> times per </label>
+                                <label>{{md.unitOfTime}}</label>
+                              </td>
+                            </div>
+                            <div class="form-group">
+                                <td>
+                                  <label for="Example">Period</label>
+                                  </td>
+                                <td>
+                                  <label>{{md.period}}</label>
+                                  <label class="sub-label"> day </label>
+                                </td>
+                              </div>
+                            
+                          <div class="form-group">
+                              <td><label for="Example">Notes</label></td>
+                              <td><label for="Example">: {{md.notes}}</label></td>
+                          </div>
+                
+                        </div> 
+            </div>
+                
+            
+        <!-- form -->
+
+
+    </div>
+  </div>
+</div>
+</div>

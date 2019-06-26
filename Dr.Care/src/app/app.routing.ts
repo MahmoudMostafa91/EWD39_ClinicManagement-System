@@ -8,6 +8,7 @@ import { ReservationFormComponent } from './features/reservation-form/reservatio
 
 import { AddclinicFormComponent } from './features/addclinic-form/addclinic-form.component';
 import { ProfileComponent } from './features/profile/profile.component';
+
 import { ClinicInfoComponent } from './features/clinic/clinic-info/clinic-info.component';
 import { DoctorProfileComponent } from './features/doctor/doctor-profile/doctor-profile.component';
 
@@ -25,7 +26,7 @@ const routes: Routes = [
     { path: 'login', component: LoginFormComponent },
     {path: 'make_reservation/:id', component: ReservationFormComponent , canActivate: [AuthGuard] },
     { path: 'addclinic', component: AddclinicFormComponent , canActivate: [AuthGuard]},
-    { path: 'profile', component: ProfileComponent , canActivate: [AuthGuard]},
+  //  { path: 'profile', component: ProfileComponent , canActivate: [AuthGuard]},
     { path: 'view_reservation', component: ReservationCelendarComponent , canActivate: [AuthGuard]},
     { path: 'clinicProfile/:id', component: ClinicInfoComponent , canActivate: [AuthGuard] },
     { path: 'doctorProfile/:id', component: DoctorProfileComponent , canActivate: [AuthGuard]},
@@ -33,6 +34,13 @@ const routes: Routes = [
     { path: 'AllDoctors', component: AllDoctorsComponent },
     { path: 'AddDr/:id', component: AddDoctorFormComponent , canActivate: [AuthGuard]},
     { path: 'Home', component: TestHomeComponent },
+
+    { path: 'profile/:id/:vid', component: ProfileComponent},
+    { path: 'profile/:id', component: ProfileComponent },
+    { path: 'profile', component: ProfileComponent },
+    { path: '', component: TestHomeComponent, canActivate: [AuthGuard] },
+
+
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

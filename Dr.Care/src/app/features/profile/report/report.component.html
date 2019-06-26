@@ -1,0 +1,101 @@
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Medical Report</h4>
+      </div>
+      <div class="modal-body">
+        
+          <!-- form -->
+     
+                  
+                  <div class="form-group form-section">
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td><label for="Example">Patient Name</label></td>
+                                  <td><label for="Example">: {{visit.patient.name}}</label></td>
+                              </tr>
+                              <tr>
+                                  <td><label for="Example">Clinic Name</label></td>
+                                  <td><label for="Example">: {{visit.clinic.name}}</label></td>
+                              </tr>
+                              <tr>
+                                  <td><label for="Example">Doctor Name</label></td>
+                                  <td><label for="Example">: {{visit.doctor.name}}</label></td>
+                              </tr>
+                              <tr>
+                                  <td><label for="Example">Date</label></td>
+                                  <td><label for="Example">: {{visit.date}}</label></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  <form [formGroup]="reportform" >
+                  <div class="form-section">
+                      <div  class="form-group">
+                          <label>Complaints</label>
+                          <textarea formControlName="complaints" name="Complaints" class="form-control"rows="7"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label>Procedures</label>
+                          <textarea formControlName="procedures" name="Procedures" class="form-control"rows="7"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label>Diagnosis</label>
+                          <textarea formControlName="diagnosis" name="Diagnosis" class="form-control"rows="7"></textarea>
+                      </div>
+                  </div>
+                  
+                  <div class="form-section">
+                        <label>Vitals </label>
+                        <a class="btn btn-default btn-sm" (click)="addVit()"> +</a>
+                        
+                        <div formArrayName="vitals" class="sub-form-section">
+                            <div *ngFor="let vt of Vit, let i = index" [formGroupName]="i" class="form-group">
+                                <select formControlName="type" name="medicine_period2" class="form-control form-control-sm">
+                                    <option *ngFor="let vit of vitalTypes" [value]="vit.name" [label]="vit.name"></option>
+                                </select>
+                                <input formControlName="measurment" name="pressure" type="text" class="form-control form-control-sm">
+
+                            </div>
+                        </div>
+                  </div>
+
+                  <div class="last-form-section">
+                          <label>Medications </label>
+                          <a class="btn btn-default btn-sm" (click)="addMed()"> +</a>
+                          <div formArrayName="medications">
+                            <div *ngFor="let md of Med, let i = index" [formGroupName]="i" class="sub-form-section">
+                            <div class="form-group">
+                            <input formControlName="name" name="medicine" type="text" class="form-control"  placeholder="Medication Name">
+                            </div>
+                            <div class="form-group">
+                          <input formControlName="noOfTimes" name="medicine_nooftimes" type="number" class="form-control form-control-sm">
+                          <label  class="sub-label"> times per </label>
+                          <select name="medicine_period2" formControlName="unitOfTime" class="form-control form-control-sm">
+                            <option>days</option>
+                            <option>weeks</option>
+                         </select>
+                         <label class="sub-label">, for </label>
+                          <input formControlName="period" type="number" name="medicine_period" class="form-control form-control-sm">
+                         <label class="sub-label"> day </label>
+                            </div>
+                            <div class="form-group">
+                            <input formControlName="notes" name="medicine_notes" type="text" class="form-control"  placeholder="Medication Notes">
+                            </div>
+                  </div> 
+                          </div> 
+              </div>
+                  
+              </form>
+          <!-- form -->
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" (click)="onSave()" class="btn btn-primary btn-lg">Save changes</button>
+      </div>
+    </div>
+  </div>

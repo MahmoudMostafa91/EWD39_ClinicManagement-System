@@ -1,7 +1,12 @@
 <section data-bg-img="images/pattern/p4.png">
   <div class="container pb-80">
-    <div class="section-title text-center">
-
+    <div class="section-title ">
+      <button *ngIf="vid !== null" type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+        data-target="#myModal">
+        Add Report
+      </button>
+      <app-report *ngIf="vid !== null" [pid]='pid' [vid]='vid' class="modal fade bs-example-modal-lg" id="myModal"
+        tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></app-report>
     </div>
     <div class="section-centent">
       <div class="row">
@@ -9,8 +14,7 @@
           <div class="services-tab border-10px bg-white-light">
             <ul class="nav tabs nav-tabs">
               <li class="active"><a class="tab" href="#Personal-info" data-toggle="tab"><i
-                    class="icon-xray2"></i>Personal
-                  Info</a>
+                    class="icon-xray2"></i>Personal Info</a>
               </li>
               <li><a class="tab" href="#Vitals" data-toggle="tab"><i class="icon-heart36"></i>Vitals</a></li>
               <li><a class="tab" href="#family-history" data-toggle="tab"><i class="icon-brain9"></i>Family history</a>
@@ -25,13 +29,14 @@
               </li>
             </ul>
             <div class="tab-content">
-              <app-personal-info class="tab-pane fade in active" id="Personal-info"></app-personal-info>
-              <app-vitals class="tab-pane fade" id="Vitals"></app-vitals>
-              <app-family-history class="tab-pane fade" id="family-history"></app-family-history>
-              <app-diseases class="tab-pane fade" id="diseases"></app-diseases>
-              <app-lab-investigations class="tab-pane fade" id="lab-investigations"></app-lab-investigations>
-              <app-visits class="tab-pane fade" id="visits"></app-visits>
-              <app-medications class="tab-pane fade" id="medications"></app-medications>
+              <app-personal-info class="tab-pane fade in active" id="Personal-info" [pid]='pid'></app-personal-info>
+              <app-vitals class="tab-pane fade" [pid]='pid' [vid]='vid' id="Vitals"></app-vitals>
+              <app-family-history class="tab-pane fade " id="family-history" [pid]='pid' [vid]='vid'>
+              </app-family-history>
+              <app-diseases class="tab-pane fade" id="diseases" [pid]='pid' [vid]='vid'></app-diseases>
+              <app-lab-investigation class="tab-pane fade" id="lab-investigations" [pid]='pid' [vid]='vid'></app-lab-investigation>
+              <app-visit class="tab-pane fade" id="visits" [pid]='pid' [vid]='vid'></app-visit>
+              <app-medications class="tab-pane fade" id="medications" [pid]='pid' [vid]='vid'></app-medications>
             </div>
           </div>
         </div>
