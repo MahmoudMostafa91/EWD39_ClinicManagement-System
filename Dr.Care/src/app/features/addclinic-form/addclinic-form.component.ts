@@ -52,7 +52,7 @@ export class AddclinicFormComponent implements OnInit {
         // console.log(this.addClinicForm);
             // .subscribe(
             //     data => {
-                    this.router.navigate(['/profile']);
+                    this.router.navigate(['/Home']);
             //     },
             //     error => {
             //         this.error = error;
