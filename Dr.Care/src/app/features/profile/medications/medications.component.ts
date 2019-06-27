@@ -7,6 +7,8 @@ import { viewAttached } from '@angular/core/src/render3/instructions';
 import { PersonalDataService } from 'src/app/_services/_profile-services/personal-data.service';
 import { VisitService } from 'src/app/_services/_profile-services/visit.service';
 
+
+
 @Component({
   selector: 'app-medications',
   templateUrl: './medications.component.html',
@@ -18,6 +20,7 @@ medicationForm: FormGroup;
 @Output() editedMed: Medication;
 @Input() pid;
 @Input() vid;
+
   constructor(public md: MedicationService, public us: PersonalDataService, public vs: VisitService) {
   }
 
@@ -86,6 +89,6 @@ medicationForm: FormGroup;
 
   onDelete(med: any) {
     this.md.delete((med as Medication).id);
-    this.medications = this.md.getAll();
+    this.medications = this.md.getByUser(Number(this.pid));
   }
 }

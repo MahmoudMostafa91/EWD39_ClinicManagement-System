@@ -65,7 +65,7 @@
                     </li>
                     <li class="text-white m-0" *ngIf="currentUser" >|</li>
                     <li class="m-0" *ngIf="currentUser" >
-                     <a class="nav-item nav-link" routerLink="/profile" >My Profile</a>
+                     <a class="nav-item nav-link" [routerLink]="[ '/profile' , this.currentUser.id ]" >My Profile</a>
                     </li>
                     <!-- <li class="text-white m-0">|</li> -->
                   </ul>
@@ -85,11 +85,13 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div>
   </div>
-</header>
+</div> -->
+    </header>
 
+<!-- 
 <header id="header" class="header" *ngIf="!currentUser">
   <div class="header-top bg-theme-colored xs-text-center">
     <div class="container">
@@ -111,7 +113,7 @@
 
   
 
-
+ -->
 
 
   <!-- <div class="header-nav">

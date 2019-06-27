@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { VisitService } from 'src/app/_services/_profile-services/visit.service';
 import { Visit } from 'src/app/_interfaces/visit';
 import { FormGroup, FormControl, FormArray } from '@angular/forms';
@@ -52,6 +52,8 @@ export class ReportComponent implements OnInit {
     this.visit.medications = this.medications;
     this.addToVitals(this.vitals);
     this.addToMed(this.medications);
+    console.log(this.medications);
+    console.log(this.visit);
   }
 
   addToVitals(vits: Vital[]) {
@@ -93,5 +95,11 @@ export class ReportComponent implements OnInit {
       type: new FormControl('Blood Pressure'),
       measurment: new FormControl(),
     }));
+  }
+
+
+  onsaveData()
+  {
+    this.saveData.emit;
   }
 }

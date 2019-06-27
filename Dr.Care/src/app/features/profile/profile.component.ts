@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProfileComponent implements OnInit {
   pid;
   vid;
+  reportsent: EventEmitter<any>;
   constructor(public activateRoute: ActivatedRoute) { }
 
   ngOnInit() {
@@ -17,5 +18,8 @@ export class ProfileComponent implements OnInit {
     console.log(this.pid);
     console.log(this.vid);
   }
-
+ondataSaved()
+{
+  this.reportsent.emit()
+}
 }

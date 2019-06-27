@@ -7,19 +7,23 @@ export class PersonalDataService {
     constructor() {
         this.User = [
             {
-                Id: 1, name: 'Soha', age: 70, bloodType: 'AB+', gender: 'Female',
+                Id: 3, name: 'Soha Ahmed', age: 70, bloodType: 'AB+', gender: 'Female',
                 telephone: '01001111002', occupation: 'Hacker', adress: 'ElMa3adi', imgURL: '../../../../assets/images/services/1.jpg'
             },
             {
-                Id: 2, name: 'Salma', age: 70, bloodType: 'AB+', gender: 'Female',
+                Id: 4, name: 'Salma Hossam'
+            },
+
+            {
+                Id: 5, name: 'Osama Korashy'
+            },
+
+            {
+                Id: 2, name: 'Ahmed Mostafa', age: 70, bloodType: 'AB+', gender: 'Male',
                 telephone: '01001111002', occupation: 'Hacker', adress: 'ElMa3adi', imgURL: '../../../../assets/images/services/1.jpg'
             },
             {
-                Id: 3, name: 'Osama', age: 70, bloodType: 'AB+', gender: 'Female',
-                telephone: '01001111002', occupation: 'Hacker', adress: 'ElMa3adi', imgURL: '../../../../assets/images/services/1.jpg'
-            },
-            {
-                Id: 4, name: 'Mohmoud', age: 70, bloodType: 'AB+', gender: 'Female',
+                Id: 1, name: 'Mohmoud Mostafa', age: 70, bloodType: 'AB+', gender: 'Male',
                 telephone: '01001111002', occupation: 'Hacker', adress: 'ElMa3adi', imgURL: '../../../../assets/images/services/1.jpg'
             }
         ];
@@ -42,6 +46,15 @@ export class PersonalDataService {
         const index = this.User.findIndex(a => a.Id === Number(use.Id));
         if (index >= 0) {
             this.User[index] = use;
+            return true;
+        }
+        return false;
+    }
+    add(user: User): boolean {
+        const oldlength = this.User.length;
+        user.Id = this.User.length + 9;
+        const newlength = this.User.push(user);
+        if (oldlength !== newlength) {
             return true;
         }
         return false;

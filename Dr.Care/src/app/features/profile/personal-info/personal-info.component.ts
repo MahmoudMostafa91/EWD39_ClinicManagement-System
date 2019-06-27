@@ -12,7 +12,8 @@ import { BloodTypesService } from 'src/app/_services/_profile-services/blood-typ
 })
 export class PersonalInfoComponent implements OnInit {
   personalInfo: User;
-  @Input() pid; 
+  @Input() pid;
+  @Input() vid; 
   infoForm: FormGroup;
   bloodTypes: BloodTypes[];
   pf: User;

@@ -1,12 +1,13 @@
 import { Medication } from 'src/app/_interfaces/medication';
 import { PersonalDataService } from './personal-data.service';
 import { Injectable } from '@angular/core';
+import { DoctorService } from '../Doctor.service';
 
 @Injectable()
 export class MedicationService {
     medications: Medication[];
 
-    constructor(public us: PersonalDataService) {
+    constructor(public us: PersonalDataService, public dc: DoctorService) {
         this.medications = [
             {id: 1, name: 'MegaMox 1', noOfTimes: 1, unitOfTime: 'week', doctor: {id: 1, name: 'Hamada 1'},
              clinic: {id: 1, name: 'ITI 1'}, from: '2019-01-01', period: 7, patientId: 1,

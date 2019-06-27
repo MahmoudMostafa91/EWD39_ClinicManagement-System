@@ -60,7 +60,7 @@ export class LabInvestigationComponent implements OnInit {
 
   onDelete(invest: LabInvesigation) {
     this.inv.delete(invest.id);
-    this.investigations = this.inv.getAll();
+    this.investigations = this.inv.getByUser(Number(this.pid));
   }
 
 }

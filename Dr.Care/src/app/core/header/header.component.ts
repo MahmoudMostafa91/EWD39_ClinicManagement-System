@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../../_services/authentication.service';
-import { clinicdata } from 'src/app/_models/clinicdata';
+import { Userdata } from 'src/app/_models/userdata';
 
 
 @Component({
@@ -43,6 +43,8 @@ export class HeaderComponent implements OnInit {
     }
 
   ngOnInit() {
+this.currentUser = this.authenticationService.currentUserValue;
+// console.log( localStorage.getItem('currentUser') );
 
     //this.filterdclinics=this.clinics;
   }
